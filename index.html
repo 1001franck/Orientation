@@ -532,6 +532,78 @@
             margin-bottom: 1rem;
         }
 
+        /* NEW: Timeline Section */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #3b82f6, #8b5cf6, #ec4899);
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: 0;
+            margin-right: 50%;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 50%;
+            margin-right: 0;
+            text-align: left;
+        }
+
+        .timeline-content {
+            background: rgba(55, 65, 81, 0.8);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid #374151;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.05);
+            border-color: #a855f7;
+            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 16px;
+            background: #a855f7;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            border: 4px solid #1a1a1a;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover .timeline-dot {
+            width: 24px;
+            height: 24px;
+            background: #ec4899;
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+        }
+
         /* FAQ */
         .faq-item {
             background: var(--secondary-bg);
@@ -581,6 +653,63 @@
             font-size: 1.5rem;
             color: var(--accent-purple);
             transition: transform 0.3s ease;
+        }
+
+        /*Contacts*/
+
+         .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+            background-size: 400% 400%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            animation: gradient-rotate 4s ease infinite;
+            z-index: -1;
+        }
+
+        .contact-card:hover::before {
+            opacity: 1;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            border-color: #a855f7;
+            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.4);
+        }
+
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover .contact-icon {
+            transform: scale(1.2) rotate(10deg);
+            animation: bounce 0.6s ease;
         }
 
         /* Footer */
@@ -1892,6 +2021,51 @@
         </div>
     </section>
 
+    <!--Process pour l'admission-->
+
+    <section id="timeline" class="section">
+        <div class="container">
+            <h2>Processus d'Orientation</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: #a855f7; margin-bottom: 0.5rem;">1. Identification de votre BAC</h3>
+                        <p>Déterminez votre série de Baccalauréat (A1, A2, B, C, D, E, F, G1, G2) et vos résultats.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: #a855f7; margin-bottom: 0.5rem;">2. Exploration des Filières</h3>
+                        <p>Consultez notre table de correspondance pour découvrir les programmes accessibles.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: #a855f7; margin-bottom: 0.5rem;">3. Choix des Universités</h3>
+                        <p>Sélectionnez les établissements qui proposent vos filières préférées.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: #a855f7; margin-bottom: 0.5rem;">4. Candidature</h3>
+                        <p>Préparez et soumettez vos dossiers de candidature avant les dates limites.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 style="color: #a855f7; margin-bottom: 0.5rem;">5. Inscription</h3>
+                        <p>Finalisez votre inscription une fois accepté dans votre programme choisi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section id="faq" class="section">
         <h2 class="section-title">Questions Fréquentes</h2>
@@ -1948,6 +2122,41 @@
                 </button>
                 <div class="faq-answer">
                     <p>Oui, le baccalauréat gabonais est reconnu dans de nombreux pays, notamment en France et dans d'autres pays francophones. Cependant, certains pays peuvent demander des équivalences ou des tests de langue supplémentaires.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contactez-Nous</h2>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3 style="color: #a855f7; margin-bottom: 1rem;">Email</h3>
+                    <p style="margin-bottom: 0.5rem;">contact@orientationplus.ga</p>
+                    <p>support@orientationplus.ga</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3 style="color: #a855f7; margin-bottom: 1rem;">Téléphone</h3>
+                    <p style="margin-bottom: 0.5rem;">+241 01 23 45 67</p>
+                    <p>+241 07 89 10 11</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3 style="color: #a855f7; margin-bottom: 1rem;">Adresse</h3>
+                    <p style="margin-bottom: 0.5rem;">Ministère de l'Éducation Nationale</p>
+                    <p>BP 6, Libreville, Gabon</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3 style="color: #a855f7; margin-bottom: 1rem;">Horaires</h3>
+                    <p style="margin-bottom: 0.5rem;">Lun - Ven: 8h00 - 17h00</p>
+                    <p>Sam: 8h00 - 12h00</p>
                 </div>
             </div>
         </div>
