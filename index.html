@@ -413,7 +413,17 @@
             border-bottom: none;
         }
 
+        a.lien{
+            display: block;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
+
         /* Institution selector */
+        
+
         .institution-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -451,6 +461,17 @@
             color: var(--accent-cyan);
             font-weight: 600;
         }
+
+        .institution-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .institution-card a:hover {
+            text-decoration: underline;
+            color:rgba(139, 92, 246, 0.2)
+        }
+
 
         /* Matching table */
         .table-container {
@@ -781,6 +802,8 @@
         .mb-2 { margin-bottom: 1rem; }
         .mb-4 { margin-bottom: 2rem; }
         .text-center { text-align: center; }
+
+
     </style>
 </head>
 <body>
@@ -795,7 +818,9 @@
                 <a href="#institutions">Universités</a>
                 <a href="#matching">Correspondance</a>
                 <a href="#tips">Conseils</a>
+                <a href="#timeline">Processus</a>
                 <a href="#faq">FAQ</a>
+                <a href="#contact">Contacts</a>
             </nav>
         </div>
     </header>
@@ -948,8 +973,8 @@
         </div>
 
         <!-- Results will appear here -->
-        <div id="results-a" class="results">
-            <h3 style="color: var(--accent-purple); margin-bottom: 2rem;">Filières accessibles avec BAC A (Littéraire)</h3>
+        <div id="results-a1" class="results">
+            <h3 style="color: var(--accent-purple); margin-bottom: 2rem;">Filières accessibles avec BAC A1 (Littéraire)</h3>
             <div class="results-grid">
                 <div class="result-card">
                     <h4>Droit</h4>
@@ -994,6 +1019,49 @@
                     <ul class="institution-list">
                         <li>Institut Gabonais des Sciences Sociales et Politiques</li>
                         <li>École Nationale d'Administration (ENA) - Libreville</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="results-a2" class="results">
+            <h3 style="color: var(--accent-purple); margin-bottom: 2rem;">Filières accessibles avec BAC A2 (Langues étrangeres)</h3>
+            <div class="results-grid">
+                <div class="result-card">
+                    <h4>Droit</h4>
+                    <ul class="institution-list">
+                        <li>Université Omar Bongo (UOB) - Libreville</li>
+                        <li>École Nationale d'Administration (ENA) - Libreville</li>
+                        <li>Centre de Formation aux Carrières Juridiques (CFCJ) - Libreville</li>
+                    </ul>
+                </div>
+                <div class="result-card">
+                    <h4>Lettres et Sciences Humaines</h4>
+                    <ul class="institution-list">
+                        <li>Université Omar Bongo (UOB) - Libreville</li>
+                        <li>École Normale Supérieure (ENS) - Libreville</li>
+                        <li>Institut Gabonais des Sciences Sociales et Politiques</li>
+                    </ul>
+                </div>
+                <div class="result-card">
+                    <h4>Écomomie et Gestion</h4>
+                    <ul class="institution-list">
+                        <li>Instiut Nationale des Sciences et de Gestion - Libreville</li>
+                        <li>Université Omar Bongo</li>
+                    </ul>
+                </div>
+                <div class="result-card">
+                    <h4>Travail Social</h4>
+                    <ul class="institution-list">
+                        <li>Institut National de Formation d'Action Sanitaire et Sociale (INFASS)</li>
+                        <li>Institut Gabonais des Sciences Sociales et Politiques</li>
+                    </ul>
+                </div>
+                <div class="result-card">
+                    <h4>Droit de l'Environnement</h4>
+                    <ul class="institution-list">
+                        <li>Université Omar Bongo (UOB) - Libreville</li>
+                        <li>École Nationale des Eaux et Forêts (ENEF) - Cap Estérias</li>
                     </ul>
                 </div>
             </div>
@@ -1370,7 +1438,7 @@
         <div class="institution-grid">
 
             <div class="institution-card glow">
-                <div class="institution-name">Institut Franco-Américain de Management(AFRAM)</div>
+                <a href="https://aframgabon.com/"><div class="institution-name">Institut Franco-Américain de Management(AFRAM)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en management, finance et audit</p>
@@ -1379,7 +1447,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Bilingual Business School (BBS)</div>
+                <a href="https://bbs-school.net/"><div class="institution-name">Bilingual Business School (BBS)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en gestion bilingue, management international</p>
@@ -1388,7 +1456,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Centre Gabonais des Métiers du Pétrole (CGMP)</div>
+                <a href="https://www.univga.org/espg-univga/"><div class="institution-name">Centre Gabonais des Métiers du Pétrole (CGMP)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Port-Gentil</div>
                     <p>Formation spécialisée dans l'industrie pétrolière et gazière.</p>
@@ -1397,7 +1465,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Collège de Paris Supérieur Gabon (CPS)</div>
+                <a href="https://gabon.collegedeparis.fr/"><div class="institution-name">Collège de Paris Supérieur Gabon (CPS)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formations supérieures internationales en management, digital, ressources humaines.</p>
@@ -1406,7 +1474,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">École des Mines et de la Métallurgie (E3MG)</div>
+                <a href="https://www.e3mg.ga/"><div class="institution-name">École des Mines et de la Métallurgie (E3MG)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Moanda</div>
                     <p>Formation en mines, métallurgie et géologie.</p>
@@ -1415,7 +1483,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">École de Management du Gabon (EM-GABON)</div>
+                <a href="https://em-gabon.nicepage.io/"><div class="institution-name">École de Management du Gabon (EM-GABON)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en management, marketing, gestion et santé</p>
@@ -1424,7 +1492,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">École Nationale de l'Audiovisuel (ENA)</div>
+                <a href="https://www.ena.fr/"><div class="institution-name">École Nationale de l'Audiovisuel (ENA)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation dans les métiers de l'audiovisuel.</p>
@@ -1433,7 +1501,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">École Nationale de Eaux et Forêts (ENEF)</div>
+                <a href="https://gabon-academie.com/listing/ecole-nationale-des-eaux-et-forets/"><div class="institution-name">École Nationale de Eaux et Forêts (ENEF)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en communication et en journalisme</p>
@@ -1442,7 +1510,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">École Normale d'Instituteurs (ENI)</div>
+                <a href="https://www.orientation.ogooue-education.com/concours-dentre-a-lecole-normale-des-instituteurs-eni-2025-gabon/"><div class="institution-name">École Normale d'Instituteurs (ENI)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation internationale, gestion, communication, tourisme, hôtellerie, ingénierie.</p>
@@ -1451,7 +1519,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">École Normale Supérieure (ENS)</div>
+                <a href="https://www.facebook.com/ens.libreville/?locale=fr_FR"><div class="institution-name">École Normale Supérieure (ENS)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation des enseignants du secondaire et du supérieur.</p>
@@ -1460,7 +1528,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">École nationale de la statistique (ENS-Stat)</div>
+                <a href="https://www.ena.fr/"><div class="institution-name">École nationale de la statistique (ENS-Stat)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en statistiques et en économie Appliquée</p>
@@ -1469,7 +1537,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">École Normale Supérieure d’Enseignement Technique (ENSET)</div>
+                <a href="https://www.facebook.com/p/%C3%89cole-Normale-Sup%C3%A9rieure-de-lEnseignement-Technique-Gabon-61561374894881/?locale=fr_FR"><div class="institution-name">École Normale Supérieure d’Enseignement Technique (ENSET)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville et Franceville</div>
                     <p>Formation en éducation technique et formation d'enseignants</p>
@@ -1478,7 +1546,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">École Supérieure des Technologies de l'Information (ESIITECH)</div>
+                <a href="https://esiitech-gabon.com/"><div class="institution-name">École Supérieure des Technologies de l'Information (ESIITECH)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation avancée en technologies de l'information et intelligence artificielle.</p>
@@ -1487,34 +1555,34 @@
             </div>
 
              <div class="institution-card glow">
-                <div class="institution-name">École Supérieure de Gestion Informatique et des Sciences (ESGIS)</div>
+                <a href="https://www.esgis.org/"><div class="institution-name">École Supérieure de Gestion Informatique et des Sciences (ESGIS)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en informatique et gestion</p>
                     <strong>Programmes:</strong> Programmation, Réseaux, BDD, Marketing
                 </div>
             </div>
-
+            
             <div class="institution-card glow">
-                <div class="institution-name">École Supérieure des Sciences d'Ingénierie et de Gestion(ESSIG)</div>
+                <a href="https://www.facebook.com/groupeessig/?locale=fr_FR"><div class="institution-name">École Supérieure des Sciences d'Ingénierie et de Gestion(ESSIG)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en ingénierie et gestion d'entreprise</p>
                     <strong>Programmes:</strong> Génie logiciel, Électronique, Comptabilité, Audit
                 </div>
             </div>
-
-            <div class="institution-card glow">
-                <div class="institution-name">Institut Africain d'Informatique (IAI)</div>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Institut panafricain spécialisé dans les technologies de l'information et l'informatique.</p>
-                    <strong>Programmes:</strong> Informatique, IA, Cybersécurité, Développement logiciel
+            
+                <div class="institution-card glow">
+                    <a href="https://www.iai-siege.com/"><div class="institution-name">Institut Africain d'Informatique (IAI)</div></a>
+                    <div class="institution-details">
+                        <div class="institution-location">📍 Libreville</div>
+                        <p>Institut panafricain spécialisé dans les technologies de l'information et l'informatique.</p>
+                        <strong>Programmes:</strong> Informatique, IA, Cybersécurité, Développement logiciel
+                    </div>
                 </div>
-            </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Institut de Formation Aéronautique (IFA)</div>
+                <a href="http://www.ifaeromaroc.com/"><div class="institution-name">Institut de Formation Aéronautique (IFA)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation spécialisée dans l'aéronautique et l'aviation civile.</p>
@@ -1523,7 +1591,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Institut des Hautes Études Économiques (IHEE)</div>
+                <a href="https://www.iheegabon.com/"><div class="institution-name">Institut des Hautes Études Économiques (IHEE)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en sciences Économique et gestion</p>
@@ -1532,7 +1600,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Institut International de Technologie et de Gestion (IITG)</div>
+                <a href="https://www.iitg-gabon.org/"><div class="institution-name">Institut International de Technologie et de Gestion (IITG)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation dans les metiers de la technologie et du management .</p>
@@ -1541,7 +1609,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Institut de Journalisme du Gabon (IJG)</div>
+                <a href="https://www.univga.org/esci-univga/"><div class="institution-name">Institut de Journalisme du Gabon (IJG)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en communication et en journalisme</p>
@@ -1550,7 +1618,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Institut National de la Poste, des Technologies de l’Information et de la Communication (INPTIC)</div>
+                <a href="https://www.inptic-ga.org/"><div class="institution-name">Institut National de la Poste, des Technologies de l’Information et de la Communication (INPTIC)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en communication et en journalisme</p>
@@ -1559,7 +1627,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Institut National des Sciences de Gestion (INSG)</div>
+                <a href="https://www.orientation.ogooue-education.com/listing/institut-national-sciences-gestion/"><div class="institution-name">Institut National des Sciences de Gestion (INSG)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Spécialisé dans la formation en gestion, comptabilité et administration des entreprises.</p>
@@ -1568,7 +1636,7 @@
             </div>
 
              <div class="institution-card glow">
-                <div class="institution-name">Institut Supérieur de Santé (ISS)</div>
+                <a href="https://issante.org/?lang=en"><div class="institution-name">Institut Supérieur de Santé (ISS)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en communication et en journalisme</p>
@@ -1577,7 +1645,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Institut Supérieur de Technologie (IST)</div>
+                <a href="https://ist.univ-lbv.com/"><div class="institution-name">Institut Supérieur de Technologie (IST)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en communication et en journalisme</p>
@@ -1586,7 +1654,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Institut Supérieur des Technologies Appliquées (ISTA)</div>
+                <a href="https://www.ista-cemac.org/"><div class="institution-name">Institut Supérieur des Technologies Appliquées (ISTA)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en TIC, Réseaux et systèmes</p>
@@ -1594,8 +1662,9 @@
                 </div>
             </div>
 
+
             <div class="institution-card glow">
-                <div class="institution-name">Institut des Techniques Avancées (ITA)</div>
+                <a href="https://www.orientation.ogooue-education.com/listing/institut-des-techniques-avancees/"><div class="institution-name">Institut des Techniques Avancées (ITA)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Spécialisé dans le domaine des technologies.</p>
@@ -1604,7 +1673,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Institut de Technologie d’Owendo (ITO)</div>
+                <a href="https://www.orientation.ogooue-education.com/listing/institut-des-technologies-dowendo/"><div class="institution-name">Institut de Technologie d’Owendo (ITO)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Owendo</div>
                     <p>Formation en électricité, électronique et maintenance industrielle</p>
@@ -1612,26 +1681,18 @@
                 </div>
             </div>
 
+
             <div class="institution-card glow">
-                <div class="institution-name">Université de Mouila</div>
+                <a href="https://www.orientation.ogooue-education.com/listing/universite-africaine-des-sciences/"><div class="institution-name">Université Africaine des Sciences (UAS)</div></a>
                 <div class="institution-details">
-                    <div class="institution-location">📍 Mouila</div>
-                    <p>Formation en lettres et langues.</p>
-                    <strong>Programmes:</strong>Lettres modernes, Langues, Gestion
+                    <div class="institution-location">📍 Libreville</div>
+                    <p>Formation Pluridisciplinaire, orientée sciences, technologie et ingénierie.</p>
+                    <strong>Programmes:</strong> Mathématiques, Physique, Chimie, Biologie, Informatique, Génie industriel, Énergie renouvelable
                 </div>
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Université de Tchibanga</div>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Tchibanga</div>
-                    <p>Formation multidisciplinaire en lettres sciences sociales</p>
-                    <strong>Programmes:</strong> Lettres, Sciences sociales, Biologie, Géographie
-                </div>
-            </div>
-
-            <div class="institution-card glow">
-                <div class="institution-name">Université Franco-gabonaise Saint-Exupéry (UFGSE)</div>
+                <a href="https://www.orientation.ogooue-education.com/listing/universite-franco-gabonaise-saint-exupery/"><div class="institution-name">Université Franco-gabonaise Saint-Exupéry (UFGSE)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation artistique et créative dans le design et les arts numériques.</p>
@@ -1640,7 +1701,16 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Université Internationale des Sciences de l’Organisation (UISO)</div>
+                <a href="https://uil-universite.com/presentation-uil/"><div class="institution-name">Université Internationale de Libreville (UIL)</div></a>
+                <div class="institution-details">
+                    <div class="institution-location">📍 Libreville</div>
+                    <p>Formation Pluridisciplinaire — Droit, Sciences politiques, Communication, Informatique de gestion, Langues, Marketing, RH…</p>
+                    <strong>Programmes:</strong> Droit (Droit des affaires, Droit international), Sciences politiques, Communication d’entreprise, Informatique de gestion
+                </div>
+            </div>
+
+            <div class="institution-card glow">
+                 <a href="https://iuso-sne.com/"><div class="institution-name">Université Internationale des Sciences de l’Organisation (UISO)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation en organisation et management</p>
@@ -1649,7 +1719,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Université Libreville Nord (ULN)</div>
+                <a href="https://univ-ln.academy/nos-etudiants/"><div class="institution-name">Université Libreville Nord (ULN)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation pluridisciplinaire (Sciences humaines, droit, économie, gestion, communication.</p>
@@ -1658,7 +1728,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Université Numérique du Gabon (UNG)</div>
+                <a href="https://www.ung.ga/dirpole"></a><div class="institution-name">Université Numérique du Gabon (UNG)</div>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Formation a distance dans les domaines de l'informatique.</p>
@@ -1667,7 +1737,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Université Omar Bongo (UOB)</div>
+                <a href="https://univuob.org/"><div class="institution-name">Université Omar Bongo (UOB)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>La plus grande université du Gabon, proposant des formations dans tous les domaines académiques.</p>
@@ -1676,7 +1746,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Université des Sciences de la Santé (USS)</div>
+                <a href="https://my-inscription.online/"><div class="institution-name">Université des Sciences de la Santé (USS)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Libreville</div>
                     <p>Dédiée aux sciences médicales et de la santé, formant les futurs professionnels de santé.</p>
@@ -1685,7 +1755,7 @@
             </div>
 
             <div class="institution-card glow">
-                <div class="institution-name">Université des Sciences et Techniques de Masuku (USTM)</div>
+                <a href="https://univ-masuku.org/"><div class="institution-name">Université des Sciences et Techniques de Masuku (USTM)</div></a>
                 <div class="institution-details">
                     <div class="institution-location">📍 Franceville</div>
                     <p>Spécialisée dans les sciences et technologies, reconnue pour ses programmes d'ingénierie.</p>
@@ -2018,7 +2088,6 @@
                 <div class="tip-title">Tenez compte de vos valeurs et de vos ambitions</div>
                 <p>Réfléchissez à ce que vous voulez accomplir dans la vie. Souhaitez-vous aider les autres, innover, voyager, assurer une stabilité ? Vos valeurs vous orienteront vers le métier le plus épanouissant.</p>
             </div>
-<<<<<<< HEAD
         </div>
     </section>
 
@@ -2026,7 +2095,7 @@
 
     <section id="timeline" class="section">
         <div class="container">
-            <h2>Processus d'Orientation</h2>
+            <h2 class="section-title">Processus d'Orientation</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
@@ -2064,8 +2133,6 @@
                     </div>
                 </div>
             </div>
-=======
->>>>>>> 60b37be8e4043d2d5e5ca58768c3a6df052be29d
         </div>
     </section>
 
