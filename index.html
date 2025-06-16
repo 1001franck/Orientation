@@ -4,46 +4,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ORIENT | Plateforme d'Orientation Gabon</title>
+  <title>ORIENT | Plateforme d'Orientation Gabon</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap"
     rel="stylesheet" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        :root {
-            --primary-bg: #0a0a0f;
-            --secondary-bg: #1a1a2e;
-            --accent-purple: #8b5cf6;
-            --accent-blue: #3b82f6;
-            --accent-cyan: #06b6d4;
-            --accent-pink: #ec4899;
-            --text-primary: #ffffff;
-            --text-secondary: #a1a1aa;
-            --success: #10b981;
-            --error: #ef4444;
-            --border-glow: rgba(139, 92, 246, 0.3);
-        }
+    :root {
+      --primary-bg: #0a0a0f;
+      --secondary-bg: #1a1a2e;
+      --accent-purple: #8b5cf6;
+      --accent-blue: #3b82f6;
+      --accent-cyan: #06b6d4;
+      --accent-pink: #ec4899;
+      --text-primary: #ffffff;
+      --text-secondary: #a1a1aa;
+      --success: #10b981;
+      --error: #ef4444;
+      --border-glow: rgba(139, 92, 246, 0.3);
+    }
 
-        body {
+    body {
       font-family: "Exo 2", sans-serif;
-            background: var(--primary-bg);
-            color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+      background: var(--primary-bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-        /* Background animations */
-        .animated-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+    /* Background animations */
+    .animated-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background: radial-gradient(circle at 20% 20%,
           rgba(139, 92, 246, 0.1) 0%,
           transparent 50%),
@@ -53,11 +53,11 @@
         radial-gradient(circle at 40% 60%,
           rgba(6, 182, 212, 0.1) 0%,
           transparent 50%);
-            z-index: -1;
-            animation: backgroundPulse 8s ease-in-out infinite;
-        }
+      z-index: -1;
+      animation: backgroundPulse 8s ease-in-out infinite;
+    }
 
-        @keyframes backgroundPulse {
+    @keyframes backgroundPulse {
 
       0%,
       100% {
@@ -67,84 +67,84 @@
       50% {
         opacity: 0.8;
       }
-        }
+    }
 
-        /* Glowing effects */
-        .glow {
-            box-shadow: 0 0 20px var(--border-glow);
-            transition: box-shadow 0.3s ease;
-        }
+    /* Glowing effects */
+    .glow {
+      box-shadow: 0 0 20px var(--border-glow);
+      transition: box-shadow 0.3s ease;
+    }
 
-        .glow:hover {
+    .glow:hover {
       box-shadow: 0 0 30px var(--border-glow),
         0 0 60px rgba(139, 92, 246, 0.2);
-        }
+    }
 
-        /* Header */
-        .header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 1rem 2rem;
-            background: rgba(26, 26, 46, 0.9);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border-glow);
-            z-index: 1000;
-        }
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      background: rgba(26, 26, 46, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-glow);
+      z-index: 1000;
+    }
 
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
 
-        .logo {
+    .logo {
       font-family: "Orbitron", monospace;
-            font-size: 1.8rem;
-            font-weight: 900;
+      font-size: 1.8rem;
+      font-weight: 900;
       background: linear-gradient(45deg,
           var(--accent-purple),
           var(--accent-cyan));
-            -webkit-background-clip: text;
-            background-clip: none;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px var(--accent-purple);
-        }
+      -webkit-background-clip: text;
+      background-clip: none;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 30px var(--accent-purple);
+    }
 
-        .nav {
-            display: flex;
-            gap: 2rem;
-        }
+    .nav {
+      display: flex;
+      gap: 2rem;
+    }
 
-        .nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-        }
+    .nav a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
 
-        .nav a:hover {
-            color: var(--accent-purple);
-            background: rgba(139, 92, 246, 0.1);
-        }
+    .nav a:hover {
+      color: var(--accent-purple);
+      background: rgba(139, 92, 246, 0.1);
+    }
 
-        /* Hero Section */
-        /* Hero Section */
-.hero {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
+    /* Hero Section */
+    /* Hero Section */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-.hero-background {
-    position: absolute;
-    inset: 0;
+    .hero-background {
+      position: absolute;
+      inset: 0;
       background: radial-gradient(circle at 30% 30%,
           rgba(139, 92, 246, 0.15) 0%,
           transparent 50%),
@@ -154,49 +154,49 @@
         radial-gradient(circle at 50% 80%,
           rgba(0, 255, 255, 0.1) 0%,
           transparent 50%);
-}
+    }
 
-.floating-orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(2px);
-    animation: float 6s ease-in-out infinite;
-}
+    .floating-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(2px);
+      animation: float 6s ease-in-out infinite;
+    }
 
-.orb-1 {
-    width: 200px;
-    height: 200px;
+    .orb-1 {
+      width: 200px;
+      height: 200px;
       background: radial-gradient(circle,
           rgba(0, 212, 255, 0.4),
           transparent);
-    top: 20%;
-    left: 10%;
-    animation-delay: 0s;
-}
+      top: 20%;
+      left: 10%;
+      animation-delay: 0s;
+    }
 
-.orb-2 {
-    width: 150px;
-    height: 150px;
+    .orb-2 {
+      width: 150px;
+      height: 150px;
       background: radial-gradient(circle,
           rgba(139, 92, 246, 0.4),
           transparent);
-    top: 60%;
-    right: 20%;
-    animation-delay: 2s;
-}
+      top: 60%;
+      right: 20%;
+      animation-delay: 2s;
+    }
 
-.orb-3 {
-    width: 100px;
-    height: 100px;
+    .orb-3 {
+      width: 100px;
+      height: 100px;
       background: radial-gradient(circle,
           rgba(0, 255, 255, 0.4),
           transparent);
-    bottom: 20%;
-    left: 60%;
-    animation-delay: 4s;
-}
+      bottom: 20%;
+      left: 60%;
+      animation-delay: 4s;
+    }
 
-@keyframes float {
+    @keyframes float {
 
       0%,
       100% {
@@ -206,32 +206,32 @@
       50% {
         transform: translateY(-30px) scale(1.1);
       }
-}
+    }
 
-.hero-content {
-    text-align: center;
-    z-index: 2;
-    max-width: 900px;
-    padding: 0 20px;
-}
+    .hero-content {
+      text-align: center;
+      z-index: 2;
+      max-width: 900px;
+      padding: 0 20px;
+    }
 
-.hero-title {
+    .hero-title {
       font-family: "Orbitron", monospace;
-    font-size: 4.5rem;
-    font-weight: 900;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-}
+      font-size: 4.5rem;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
 
-.gradient-text {
-    background: linear-gradient(45deg, #00d4ff, #00ffff, #8b5cf6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradient-shift 3s ease-in-out infinite;
-}
+    .gradient-text {
+      background: linear-gradient(45deg, #00d4ff, #00ffff, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradient-shift 3s ease-in-out infinite;
+    }
 
-@keyframes gradient-shift {
+    @keyframes gradient-shift {
 
       0%,
       100% {
@@ -241,16 +241,16 @@
       50% {
         filter: hue-rotate(60deg);
       }
-}
+    }
 
-.glow-text {
-    color: #ffffff;
+    .glow-text {
+      color: #ffffff;
       text-shadow: 0 0 30px rgba(255, 255, 255, 0.8),
         0 0 60px rgba(0, 212, 255, 0.6);
-    animation: glow-pulse 2s ease-in-out infinite alternate;
-}
+      animation: glow-pulse 2s ease-in-out infinite alternate;
+    }
 
-@keyframes glow-pulse {
+    @keyframes glow-pulse {
       from {
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.8),
           0 0 60px rgba(0, 212, 255, 0.6);
@@ -260,611 +260,611 @@
         text-shadow: 0 0 40px rgba(255, 255, 255, 1),
           0 0 80px rgba(0, 212, 255, 0.8);
       }
-}
+    }
 
-.hero-subtitle {
-    font-size: 1.4rem;
-    color: #b3b3b3;
-    margin-bottom: 3rem;
-    line-height: 1.6;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .hero-subtitle {
+      font-size: 1.4rem;
+      color: #b3b3b3;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.cta-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeInUp 1s ease-out 0.6s both;
-        }
+    .cta-buttons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeInUp 1s ease-out 0.6s both;
+    }
 
-        .btn {
-            padding: 1rem 2rem;
-            border-radius: 0.75rem;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
+    .btn {
+      padding: 1rem 2rem;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
 
-        .btn-primary {
+    .btn-primary {
       background: linear-gradient(45deg,
           var(--accent-purple),
           var(--accent-blue));
-            color: white;
-        }
+      color: white;
+    }
 
-        .btn-secondary {
-            border: 2px solid var(--accent-purple);
-            color: var(--accent-purple);
-            background: transparent;
-        }
+    .btn-secondary {
+      border: 2px solid var(--accent-purple);
+      color: var(--accent-purple);
+      background: transparent;
+    }
 
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
-        }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+    }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
 
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-        @keyframes textGlow {
-            from {
-                text-shadow: 0 0 20px var(--accent-purple);
-            }
+    @keyframes textGlow {
+      from {
+        text-shadow: 0 0 20px var(--accent-purple);
+      }
 
-            to {
+      to {
         text-shadow: 0 0 40px var(--accent-purple),
           0 0 60px var(--accent-cyan);
-            }
-        }
+      }
+    }
 
-        /* Sections */
-        .section {
-            padding: 5rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
+    /* Sections */
+    .section {
+      padding: 5rem 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
 
-        .section-title {
+    .section-title {
       font-family: "Orbitron", monospace;
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            text-align: center;
-            margin-bottom: 3rem;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      text-align: center;
+      margin-bottom: 3rem;
       background: linear-gradient(45deg,
           var(--accent-purple),
           var(--accent-cyan));
-            -webkit-background-clip: text;
-            background-clip: none;
-            -webkit-text-fill-color: transparent;
-        }
+      -webkit-background-clip: text;
+      background-clip: none;
+      -webkit-text-fill-color: transparent;
+    }
 
-        /* BAC Selection */
-        .bac-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
+    /* BAC Selection */
+    .bac-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
 
-        .bac-card {
-            background: var(--secondary-bg);
-            border-radius: 1rem;
-            padding: 1.5rem;
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
+    .bac-card {
+      background: var(--secondary-bg);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
 
-        .bac-card::before {
+    .bac-card::before {
       content: "";
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
       background: linear-gradient(90deg,
           transparent,
           rgba(139, 92, 246, 0.2),
           transparent);
-            transition: left 0.5s ease;
-        }
+      transition: left 0.5s ease;
+    }
 
-        .bac-card:hover::before {
-            left: 100%;
-        }
+    .bac-card:hover::before {
+      left: 100%;
+    }
 
-        .bac-card:hover {
-            border-color: var(--accent-purple);
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.3);
-        }
+    .bac-card:hover {
+      border-color: var(--accent-purple);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(139, 92, 246, 0.3);
+    }
 
-        .bac-code {
+    .bac-code {
       font-family: "Orbitron", monospace;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--accent-purple);
-            margin-bottom: 0.5rem;
-        }
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-purple);
+      margin-bottom: 0.5rem;
+    }
 
-        .bac-name {
-            font-size: 1.1rem;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-        }
+    .bac-name {
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
 
-        .bac-programs {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
+    .bac-programs {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
 
-        /* Radio button styling */
-        input[type="radio"] {
-            display: none;
-        }
+    /* Radio button styling */
+    input[type="radio"] {
+      display: none;
+    }
 
     input[type="radio"]:checked+.bac-card {
-            border-color: var(--accent-purple);
+      border-color: var(--accent-purple);
       background: linear-gradient(135deg,
           rgba(139, 92, 246, 0.2),
           rgba(59, 130, 246, 0.1));
-            box-shadow: 0 0 30px rgba(139, 92, 246, 0.4);
-        }
+      box-shadow: 0 0 30px rgba(139, 92, 246, 0.4);
+    }
 
-        /* Results section */
-        .results {
-            margin-top: 3rem;
-            padding: 2rem;
-            background: var(--secondary-bg);
-            border-radius: 1rem;
-            border: 1px solid var(--border-glow);
-            display: none;
-        }
+    /* Results section */
+    .results {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: var(--secondary-bg);
+      border-radius: 1rem;
+      border: 1px solid var(--border-glow);
+      display: none;
+    }
 
-        .results.active {
-            display: block;
-            animation: fadeInUp 0.5s ease-out;
-        }
+    .results.active {
+      display: block;
+      animation: fadeInUp 0.5s ease-out;
+    }
 
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
 
-        .result-card {
-            background: rgba(139, 92, 246, 0.1);
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            border: 1px solid var(--accent-purple);
-        }
+    .result-card {
+      background: rgba(139, 92, 246, 0.1);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      border: 1px solid var(--accent-purple);
+    }
 
-        .result-card h4 {
-            color: var(--accent-purple);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
+    .result-card h4 {
+      color: var(--accent-purple);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
 
-        .institution-list {
-            list-style: none;
-        }
+    .institution-list {
+      list-style: none;
+    }
 
-        .institution-list li {
-            padding: 0.5rem 0;
-            color: var(--text-secondary);
-            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
-        }
+    .institution-list li {
+      padding: 0.5rem 0;
+      color: var(--text-secondary);
+      border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    }
 
-        .institution-list li:last-child {
-            border-bottom: none;
-        }
+    .institution-list li:last-child {
+      border-bottom: none;
+    }
 
     a.lien {
-            display: block;
-            height: 100%;
-            width: 100%;
-            text-decoration: none;
-            color: inherit;
-        }
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+      color: inherit;
+    }
 
-        /* Institution selector */
+    /* Institution selector */
 
-        .institution-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 1.5rem;
-        }
+    .institution-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.5rem;
+    }
 
-        .institution-card {
-            background: var(--secondary-bg);
-            border-radius: 1rem;
-            padding: 2rem;
-            border: 1px solid rgba(139, 92, 246, 0.3);
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
+    .institution-card {
+      background: var(--secondary-bg);
+      border-radius: 1rem;
+      padding: 2rem;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
 
-        .institution-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-purple);
-            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.2);
-        }
+    .institution-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-purple);
+      box-shadow: 0 15px 40px rgba(139, 92, 246, 0.2);
+    }
 
-        .institution-name {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--accent-purple);
-            margin-bottom: 1rem;
-        }
+    .institution-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent-purple);
+      margin-bottom: 1rem;
+    }
 
-        .institution-details {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-        }
+    .institution-details {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
 
-        .institution-location {
-            color: var(--accent-cyan);
-            font-weight: 600;
-        }
+    .institution-location {
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
 
-        .institution-card a {
-            text-decoration: none;
-            color: inherit;
-        }
+    .institution-card a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-        .institution-card a:hover {
-            text-decoration: underline;
+    .institution-card a:hover {
+      text-decoration: underline;
       color: rgba(139, 92, 246, 0.2);
-        }
+    }
 
-        /* Matching table */
-        .table-container {
-            overflow-x: auto;
-            background: var(--secondary-bg);
-            border-radius: 1rem;
-            border: 1px solid var(--border-glow);
-        }
+    /* Matching table */
+    .table-container {
+      overflow-x: auto;
+      background: var(--secondary-bg);
+      border-radius: 1rem;
+      border: 1px solid var(--border-glow);
+    }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
 
     th,
     td {
-            padding: 1rem;
-            text-align: center;
-            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
-        }
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    }
 
-        th {
-            background: rgba(139, 92, 246, 0.2);
-            color: var(--accent-purple);
-            font-weight: 700;
-            position: sticky;
-            top: 0;
-        }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: var(--accent-purple);
+      font-weight: 700;
+      position: sticky;
+      top: 0;
+    }
 
     td:first-child,
     th:first-child {
-            text-align: left;
-            position: sticky;
-            left: 0;
-            background: var(--secondary-bg);
-        }
+      text-align: left;
+      position: sticky;
+      left: 0;
+      background: var(--secondary-bg);
+    }
 
-        .check-yes {
-            color: var(--success);
-            font-size: 1.5rem;
-        }
+    .check-yes {
+      color: var(--success);
+      font-size: 1.5rem;
+    }
 
-        .check-no {
-            color: var(--error);
-            font-size: 1.5rem;
-        }
+    .check-no {
+      color: var(--error);
+      font-size: 1.5rem;
+    }
 
-        tr:hover {
-            background: rgba(139, 92, 246, 0.1);
-        }
+    tr:hover {
+      background: rgba(139, 92, 246, 0.1);
+    }
 
-        /* Tips section */
-        .tips-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
+    /* Tips section */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
 
-        .tip-card {
-            background: var(--secondary-bg);
-            border-radius: 1rem;
-            padding: 2rem;
-            border-left: 4px solid var(--accent-purple);
-            transition: all 0.3s ease;
-        }
+    .tip-card {
+      background: var(--secondary-bg);
+      border-radius: 1rem;
+      padding: 2rem;
+      border-left: 4px solid var(--accent-purple);
+      transition: all 0.3s ease;
+    }
 
-        .tip-card:hover {
-            transform: translateX(10px);
-            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
-        }
+    .tip-card:hover {
+      transform: translateX(10px);
+      box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+    }
 
-        .tip-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
+    .tip-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
 
-        .tip-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--accent-purple);
-            margin-bottom: 1rem;
-        }
+    .tip-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent-purple);
+      margin-bottom: 1rem;
+    }
 
-        /* NEW: Timeline Section */
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 0;
-        }
+    /* NEW: Timeline Section */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
 
-        .timeline::before {
+    .timeline::before {
       content: "";
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(to bottom, #3b82f6, #8b5cf6, #ec4899);
-            transform: translateX(-50%);
-            border-radius: 2px;
-        }
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(to bottom, #3b82f6, #8b5cf6, #ec4899);
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
 
-        .timeline-item {
-            position: relative;
-            margin: 2rem 0;
-        }
+    .timeline-item {
+      position: relative;
+      margin: 2rem 0;
+    }
 
-        .timeline-item:nth-child(odd) .timeline-content {
-            margin-left: 0;
-            margin-right: 50%;
-            text-align: right;
-        }
+    .timeline-item:nth-child(odd) .timeline-content {
+      margin-left: 0;
+      margin-right: 50%;
+      text-align: right;
+    }
 
-        .timeline-item:nth-child(even) .timeline-content {
-            margin-left: 50%;
-            margin-right: 0;
-            text-align: left;
-        }
+    .timeline-item:nth-child(even) .timeline-content {
+      margin-left: 50%;
+      margin-right: 0;
+      text-align: left;
+    }
 
-        .timeline-content {
-            background: rgba(55, 65, 81, 0.8);
-            padding: 1.5rem;
-            border-radius: 10px;
-            border: 1px solid #374151;
-            transition: all 0.3s ease;
-            position: relative;
-        }
+    .timeline-content {
+      background: rgba(55, 65, 81, 0.8);
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #374151;
+      transition: all 0.3s ease;
+      position: relative;
+    }
 
-        .timeline-content:hover {
-            transform: scale(1.05);
-            border-color: #a855f7;
-            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
-        }
+    .timeline-content:hover {
+      transform: scale(1.05);
+      border-color: #a855f7;
+      box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+    }
 
-        .timeline-dot {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 16px;
-            height: 16px;
-            background: #a855f7;
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            border: 4px solid #1a1a1a;
-            transition: all 0.3s ease;
-        }
+    .timeline-dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 16px;
+      height: 16px;
+      background: #a855f7;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      border: 4px solid #1a1a1a;
+      transition: all 0.3s ease;
+    }
 
-        .timeline-item:hover .timeline-dot {
-            width: 24px;
-            height: 24px;
-            background: #ec4899;
-            box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
-        }
+    .timeline-item:hover .timeline-dot {
+      width: 24px;
+      height: 24px;
+      background: #ec4899;
+      box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+    }
 
-        /* FAQ */
-        .faq-item {
-            background: var(--secondary-bg);
-            border-radius: 0.75rem;
-            margin-bottom: 1rem;
-            border: 1px solid rgba(139, 92, 246, 0.3);
-            overflow: hidden;
-        }
+    /* FAQ */
+    .faq-item {
+      background: var(--secondary-bg);
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      overflow: hidden;
+    }
 
-        .faq-question {
-            padding: 1.5rem;
-            cursor: pointer;
-            background: transparent;
-            border: none;
-            color: var(--text-primary);
-            font-size: 1.1rem;
-            width: 100%;
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s ease;
-        }
+    .faq-question {
+      padding: 1.5rem;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      color: var(--text-primary);
+      font-size: 1.1rem;
+      width: 100%;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
 
-        .faq-question:hover {
-            background: rgba(139, 92, 246, 0.1);
-        }
+    .faq-question:hover {
+      background: rgba(139, 92, 246, 0.1);
+    }
 
-        .faq-answer {
-            padding: 0 1.5rem;
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
+    .faq-answer {
+      padding: 0 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
 
-        .faq-item.active .faq-answer {
-            max-height: 200px;
-            padding: 1.5rem;
-        }
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+      padding: 1.5rem;
+    }
 
-        .faq-item.active .faq-question::after {
-            transform: rotate(45deg);
-        }
+    .faq-item.active .faq-question::after {
+      transform: rotate(45deg);
+    }
 
-        .faq-question::after {
+    .faq-question::after {
       content: "+";
-            font-size: 1.5rem;
-            color: var(--accent-purple);
-            transition: transform 0.3s ease;
-        }
+      font-size: 1.5rem;
+      color: var(--accent-purple);
+      transition: transform 0.3s ease;
+    }
 
-        /*Contacts*/
+    /*Contacts*/
 
-         .contact-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
+    .contact-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
 
-        .contact-card {
+    .contact-card {
       background: linear-gradient(135deg,
           rgba(59, 130, 246, 0.1),
           rgba(139, 92, 246, 0.1));
-            border: 2px solid transparent;
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            transition: all 0.5s ease;
-            position: relative;
-            overflow: hidden;
-        }
+      border: 2px solid transparent;
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.5s ease;
+      position: relative;
+      overflow: hidden;
+    }
 
-        .contact-card::before {
+    .contact-card::before {
       content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
-            background-size: 400% 400%;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            animation: gradient-rotate 4s ease infinite;
-            z-index: -1;
-        }
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+      background-size: 400% 400%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      animation: gradient-rotate 4s ease infinite;
+      z-index: -1;
+    }
 
-        .contact-card:hover::before {
-            opacity: 1;
-        }
+    .contact-card:hover::before {
+      opacity: 1;
+    }
 
-        .contact-card:hover {
-            transform: translateY(-10px) scale(1.05);
-            border-color: #a855f7;
-            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.4);
-        }
+    .contact-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      border-color: #a855f7;
+      box-shadow: 0 20px 40px rgba(168, 85, 247, 0.4);
+    }
 
-        .contact-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            display: inline-block;
-            transition: all 0.3s ease;
-        }
+    .contact-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
 
-        .contact-card:hover .contact-icon {
-            transform: scale(1.2) rotate(10deg);
-            animation: bounce 0.6s ease;
-        }
+    .contact-card:hover .contact-icon {
+      transform: scale(1.2) rotate(10deg);
+      animation: bounce 0.6s ease;
+    }
 
-        /* Footer */
-        .footer {
-            background: var(--secondary-bg);
-            padding: 3rem 2rem 2rem;
-            text-align: center;
-            border-top: 1px solid var(--border-glow);
-        }
+    /* Footer */
+    .footer {
+      background: var(--secondary-bg);
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+      border-top: 1px solid var(--border-glow);
+    }
 
-        .footer-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
 
-        .footer-logo {
+    .footer-logo {
       font-family: "Orbitron", monospace;
-            font-size: 2rem;
-            font-weight: 900;
+      font-size: 2rem;
+      font-weight: 900;
       background: linear-gradient(45deg,
           var(--accent-purple),
           var(--accent-cyan));
-            -webkit-background-clip: text;
-            background-clip: none;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-        }
+      -webkit-background-clip: text;
+      background-clip: none;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
 
-        .footer-text {
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-        }
+    .footer-text {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+    }
 
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
 
-        .footer-links span {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
+    .footer-links span {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav {
-                display: none;
-            }
-            
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .section {
-                padding: 3rem 1rem;
-            }
-            
-            .bac-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav {
+        display: none;
+      }
 
-        /* Utility classes */
-        .hidden {
-            display: none !important;
-        }
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section {
+        padding: 3rem 1rem;
+      }
+
+      .bac-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Utility classes */
+    .hidden {
+      display: none !important;
+    }
 
     .mb-2 {
       margin-bottom: 1rem;
@@ -921,853 +921,853 @@
       text-decoration-thickness: 2px;
       text-underline-offset: 4px;
     }
-    </style>
+  </style>
 </head>
 
 <body>
-    <div class="animated-bg"></div>
-    
-    <!-- Header -->
-    <header class="header">
-        <div class="header-content">
-            <div class="logo">ORIENT</div>
-            <nav class="nav">
-                <a href="#bac-selection">Séries BAC</a>
-                <a href="#institutions">Universités</a>
-                <a href="#matching">Correspondance</a>
-                <a href="#tips">Conseils</a>
-                <a href="#timeline">Processus</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contact">Contacts</a>
-            </nav>
-        </div>
-    </header>
-<!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-background"></div>
-        <div class="floating-orb orb-1"></div>
-        <div class="floating-orb orb-2"></div>
-        <div class="floating-orb orb-3"></div>
-        
-        <div class="hero-content">
-            <h1 class="hero-title">
+  <div class="animated-bg"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">ORIENT</div>
+      <nav class="nav">
+        <a href="#bac-selection">Séries BAC</a>
+        <a href="#institutions">Universités</a>
+        <a href="#matching">Correspondance</a>
+        <a href="#tips">Conseils</a>
+        <a href="#timeline">Processus</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contacts</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-background"></div>
+    <div class="floating-orb orb-1"></div>
+    <div class="floating-orb orb-2"></div>
+    <div class="floating-orb orb-3"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
         <span class="gradient-text">Trouvez Votre</span><br />
-                <span class="glow-text">Avenir Universitaire</span>
-            </h1>
-            <p class="hero-subtitle">
+        <span class="glow-text">Avenir Universitaire</span>
+      </h1>
+      <p class="hero-subtitle">
         Découvrez les filières et universités au Gabon ou à l'étranger
         parfaites pour votre série de Baccalauréat. Plus de 35 institutions
         publiques gabonaises vous attendent.
-            </p>
+      </p>
 
-            <div class="cta-buttons">
-                <a href="#bac-selection" class="btn btn-primary">Explorer par Série BAC</a>
+      <div class="cta-buttons">
+        <a href="#bac-selection" class="btn btn-primary">Explorer par Série BAC</a>
         <a href="#institutions" class="btn btn-secondary">Voir les Universités au Gabon</a>
         <a href="#institutions2" class="btn btn-secondary">Voir les Universités à l'étranger</a>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- BAC Selection Section -->
-    <section id="bac-selection" class="section">
-        <h2 class="section-title">Sélectionnez votre Série de Baccalauréat</h2>
-        
-        <div class="bac-grid">
+  <!-- BAC Selection Section -->
+  <section id="bac-selection" class="section">
+    <h2 class="section-title">Sélectionnez votre Série de Baccalauréat</h2>
+
+    <div class="bac-grid">
       <input type="radio" name="bac" id="bac-a1" value="A1" />
-            <label for="bac-a1">
-                <div class="bac-card">
-                    <div class="bac-code">BAC A1</div>
-                    <div class="bac-name">Littéraire</div>
+      <label for="bac-a1">
+        <div class="bac-card">
+          <div class="bac-code">BAC A1</div>
+          <div class="bac-name">Littéraire</div>
           <div class="bac-programs">
             Droit, Lettres, Histoire, Philosophie, Sciences de l'éducation,
             Mathématiques
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-a2" value="A2" />
-            <label for="bac-a2">
-                <div class="bac-card">
-                    <div class="bac-code">BAC A2</div>
-                    <div class="bac-name">Littéraire</div>
+      <label for="bac-a2">
+        <div class="bac-card">
+          <div class="bac-code">BAC A2</div>
+          <div class="bac-name">Littéraire</div>
           <div class="bac-programs">
             Langues étrangeres, Lettres, Philosophie, Sciences humaines
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-b" value="B" />
-            <label for="bac-b">
-                <div class="bac-card">
-                    <div class="bac-code">BAC B</div>
-                    <div class="bac-name">Économique et Social</div>
+      <label for="bac-b">
+        <div class="bac-card">
+          <div class="bac-code">BAC B</div>
+          <div class="bac-name">Économique et Social</div>
           <div class="bac-programs">
             Économie, Gestion, Sciences Sociales, Commerce, Logistique
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-c" value="C" />
-            <label for="bac-c">
-                <div class="bac-card">
-                    <div class="bac-code">BAC C</div>
-                    <div class="bac-name">Mathématiques et Physique</div>
+      <label for="bac-c">
+        <div class="bac-card">
+          <div class="bac-code">BAC C</div>
+          <div class="bac-name">Mathématiques et Physique</div>
           <div class="bac-programs">
             Mathématiques, Physique, Informatique, Ingénierie, IA
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-d" value="D" />
-            <label for="bac-d">
-                <div class="bac-card">
-                    <div class="bac-code">BAC D</div>
-                    <div class="bac-name">Biologie et Sciences Naturelles</div>
+      <label for="bac-d">
+        <div class="bac-card">
+          <div class="bac-code">BAC D</div>
+          <div class="bac-name">Biologie et Sciences Naturelles</div>
           <div class="bac-programs">
             Médecine, Biologie, Pharmacie, Vétérinaire, Biologie marine
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-e" value="E" />
-            <label for="bac-e">
-                <div class="bac-card">
-                    <div class="bac-code">BAC E</div>
-                    <div class="bac-name">Techniques Industrielles</div>
+      <label for="bac-e">
+        <div class="bac-card">
+          <div class="bac-code">BAC E</div>
+          <div class="bac-name">Techniques Industrielles</div>
           <div class="bac-programs">
             Génie Civil, Mécanique, Électrotechnique, BTP, Aéronautique
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-f" value="F" />
-            <label for="bac-f">
-                <div class="bac-card">
-                    <div class="bac-code">BAC F1-F6</div>
-                    <div class="bac-name">Techniques Spécialisées</div>
+      <label for="bac-f">
+        <div class="bac-card">
+          <div class="bac-code">BAC F1-F6</div>
+          <div class="bac-name">Techniques Spécialisées</div>
           <div class="bac-programs">
             Électronique, Automatisme, Maintenance, Production
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-g1" value="G1" />
-            <label for="bac-g1">
-                <div class="bac-card">
-                    <div class="bac-code">BAC G1</div>
-                    <div class="bac-name">Techniques Commerciales</div>
+      <label for="bac-g1">
+        <div class="bac-card">
+          <div class="bac-code">BAC G1</div>
+          <div class="bac-name">Techniques Commerciales</div>
           <div class="bac-programs">
             Commerce, Marketing, Vente, Hôtellerie, Tourisme
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-g2" value="G2" />
-            <label for="bac-g2">
-                <div class="bac-card">
-                    <div class="bac-code">BAC G2</div>
-                    <div class="bac-name">Comptabilité et Gestion</div>
+      <label for="bac-g2">
+        <div class="bac-card">
+          <div class="bac-code">BAC G2</div>
+          <div class="bac-name">Comptabilité et Gestion</div>
           <div class="bac-programs">
             Comptabilité, Finance, Audit, Contrôle de Gestion
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-g3" value="G3" />
-            <label for="bac-g3">
-                <div class="bac-card">
-                    <div class="bac-code">BAC G3</div>
-                    <div class="bac-name">Techniques Administratives</div>
+      <label for="bac-g3">
+        <div class="bac-card">
+          <div class="bac-code">BAC G3</div>
+          <div class="bac-name">Techniques Administratives</div>
           <div class="bac-programs">
             Administration, Secrétariat, Production audiovisuelle
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-ti" value="TI" />
-            <label for="bac-ti">
-                <div class="bac-card">
-                    <div class="bac-code">BAC TI</div>
-                    <div class="bac-name">Technologie Industrielle</div>
+      <label for="bac-ti">
+        <div class="bac-card">
+          <div class="bac-code">BAC TI</div>
+          <div class="bac-name">Technologie Industrielle</div>
           <div class="bac-programs">
             Génie biomédical, Génie naval, IA et sciences des données
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-sms" value="SMS" />
-            <label for="bac-sms">
-                <div class="bac-card">
-                    <div class="bac-code">BAC SMS</div>
-                    <div class="bac-name">Sciences Médico-Sociales</div>
+      <label for="bac-sms">
+        <div class="bac-card">
+          <div class="bac-code">BAC SMS</div>
+          <div class="bac-name">Sciences Médico-Sociales</div>
           <div class="bac-programs">
             Travail social, Sciences du sport, Criminologie
           </div>
-                </div>
-            </label>
+        </div>
+      </label>
 
       <input type="radio" name="bac" id="bac-tq" value="TQ" />
-            <label for="bac-tq">
-                <div class="bac-card">
-                    <div class="bac-code">BAC TQ</div>
-                    <div class="bac-name">Techniques Qualifiantes</div>
+      <label for="bac-tq">
+        <div class="bac-card">
+          <div class="bac-code">BAC TQ</div>
+          <div class="bac-name">Techniques Qualifiantes</div>
           <div class="bac-programs">
             Stylisme, Design textile, Hôtellerie, Tourisme
           </div>
-                </div>
-            </label>
         </div>
+      </label>
+    </div>
 
-        <!-- Results will appear here -->
-        <div id="results-a1" class="results">
+    <!-- Results will appear here -->
+    <div id="results-a1" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC A1 (Littéraire)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Droit</h4>
-                    <ul class="institution-list">
-                        <li>Université Omar Bongo (UOB) - Libreville</li>
-                        <li>École Nationale d'Administration (ENA) - Libreville</li>
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Droit</h4>
+          <ul class="institution-list">
+            <li>Université Omar Bongo (UOB) - Libreville</li>
+            <li>École Nationale d'Administration (ENA) - Libreville</li>
             <li>
               Centre de Formation aux Carrières Juridiques (CFCJ) - Libreville
             </li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Lettres et Sciences Humaines</h4>
-                    <ul class="institution-list">
-                        <li>Université Omar Bongo (UOB) - Libreville</li>
-                        <li>École Normale Supérieure (ENS) - Libreville</li>
-                        <li>Institut Gabonais des Sciences Sociales et Politiques</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Sciences de l'Éducation</h4>
-                    <ul class="institution-list">
-                        <li>École Normale Supérieure (ENS) - Libreville</li>
-                        <li>Institut National des Professeurs de Lycée</li>
-                        <li>École Normale des Instituteurs (ENI) - Franceville</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Travail Social</h4>
-                    <ul class="institution-list">
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Lettres et Sciences Humaines</h4>
+          <ul class="institution-list">
+            <li>Université Omar Bongo (UOB) - Libreville</li>
+            <li>École Normale Supérieure (ENS) - Libreville</li>
+            <li>Institut Gabonais des Sciences Sociales et Politiques</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Sciences de l'Éducation</h4>
+          <ul class="institution-list">
+            <li>École Normale Supérieure (ENS) - Libreville</li>
+            <li>Institut National des Professeurs de Lycée</li>
+            <li>École Normale des Instituteurs (ENI) - Franceville</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Travail Social</h4>
+          <ul class="institution-list">
             <li>
               Institut National de Formation d'Action Sanitaire et Sociale
               (INFASS)
             </li>
-                        <li>Institut Gabonais des Sciences Sociales et Politiques</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Droit de l'Environnement</h4>
-                    <ul class="institution-list">
-                        <li>Université Omar Bongo (UOB) - Libreville</li>
-                        <li>École Nationale des Eaux et Forêts (ENEF) - Cap Estérias</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Criminologie et Sécurité Publique</h4>
-                    <ul class="institution-list">
-                        <li>Institut Gabonais des Sciences Sociales et Politiques</li>
-                        <li>École Nationale d'Administration (ENA) - Libreville</li>
-                    </ul>
-                </div>
-            </div>
+            <li>Institut Gabonais des Sciences Sociales et Politiques</li>
+          </ul>
         </div>
+        <div class="result-card">
+          <h4>Droit de l'Environnement</h4>
+          <ul class="institution-list">
+            <li>Université Omar Bongo (UOB) - Libreville</li>
+            <li>École Nationale des Eaux et Forêts (ENEF) - Cap Estérias</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Criminologie et Sécurité Publique</h4>
+          <ul class="institution-list">
+            <li>Institut Gabonais des Sciences Sociales et Politiques</li>
+            <li>École Nationale d'Administration (ENA) - Libreville</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        <div id="results-a2" class="results">
+    <div id="results-a2" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC A2 (Langues étrangeres)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Droit</h4>
-                    <ul class="institution-list">
-                        <li>Université Omar Bongo (UOB) - Libreville</li>
-                        <li>École Nationale d'Administration (ENA) - Libreville</li>
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Droit</h4>
+          <ul class="institution-list">
+            <li>Université Omar Bongo (UOB) - Libreville</li>
+            <li>École Nationale d'Administration (ENA) - Libreville</li>
             <li>
               Centre de Formation aux Carrières Juridiques (CFCJ) - Libreville
             </li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Lettres et Sciences Humaines</h4>
-                    <ul class="institution-list">
-                        <li>Université Omar Bongo (UOB) - Libreville</li>
-                        <li>École Normale Supérieure (ENS) - Libreville</li>
-                        <li>Institut Gabonais des Sciences Sociales et Politiques</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Écomomie et Gestion</h4>
-                    <ul class="institution-list">
-                        <li>Instiut Nationale des Sciences et de Gestion - Libreville</li>
-                        <li>Université Omar Bongo</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Travail Social</h4>
-                    <ul class="institution-list">
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Lettres et Sciences Humaines</h4>
+          <ul class="institution-list">
+            <li>Université Omar Bongo (UOB) - Libreville</li>
+            <li>École Normale Supérieure (ENS) - Libreville</li>
+            <li>Institut Gabonais des Sciences Sociales et Politiques</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Écomomie et Gestion</h4>
+          <ul class="institution-list">
+            <li>Instiut Nationale des Sciences et de Gestion - Libreville</li>
+            <li>Université Omar Bongo</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Travail Social</h4>
+          <ul class="institution-list">
             <li>
               Institut National de Formation d'Action Sanitaire et Sociale
               (INFASS)
             </li>
-                        <li>Institut Gabonais des Sciences Sociales et Politiques</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Droit de l'Environnement</h4>
-                    <ul class="institution-list">
-                        <li>Université Omar Bongo (UOB) - Libreville</li>
-                        <li>École Nationale des Eaux et Forêts (ENEF) - Cap Estérias</li>
-                    </ul>
-                </div>
-            </div>
+            <li>Institut Gabonais des Sciences Sociales et Politiques</li>
+          </ul>
         </div>
+        <div class="result-card">
+          <h4>Droit de l'Environnement</h4>
+          <ul class="institution-list">
+            <li>Université Omar Bongo (UOB) - Libreville</li>
+            <li>École Nationale des Eaux et Forêts (ENEF) - Cap Estérias</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        <div id="results-b" class="results">
+    <div id="results-b" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC B (Économique et Social)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Économie et Gestion</h4>
-                    <ul class="institution-list">
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Économie et Gestion</h4>
+          <ul class="institution-list">
             <li>
               Institut National des Sciences de Gestion (INSG) - Libreville
             </li>
-                        <li>Université Omar Bongo (UOB) - Libreville</li>
-                        <li>École Nationale de Commerce (ENC) - Libreville</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Sciences Sociales</h4>
-                    <ul class="institution-list">
-                        <li>Université Omar Bongo (UOB) - Libreville</li>
-                        <li>Institut Gabonais des Sciences Sociales et Politiques</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Commerce International</h4>
-                    <ul class="institution-list">
-                        <li>École Nationale de Commerce (ENC) - Libreville</li>
-                        <li>École de Commerce et de Gestion (ECG)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Logistique et Transport</h4>
-                    <ul class="institution-list">
+            <li>Université Omar Bongo (UOB) - Libreville</li>
+            <li>École Nationale de Commerce (ENC) - Libreville</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Sciences Sociales</h4>
+          <ul class="institution-list">
+            <li>Université Omar Bongo (UOB) - Libreville</li>
+            <li>Institut Gabonais des Sciences Sociales et Politiques</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Commerce International</h4>
+          <ul class="institution-list">
+            <li>École Nationale de Commerce (ENC) - Libreville</li>
+            <li>École de Commerce et de Gestion (ECG)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Logistique et Transport</h4>
+          <ul class="institution-list">
             <li>
               Institut National des Métiers de la Mer (INMM) - Port-Gentil
             </li>
-                        <li>Institut Supérieur des Études Maritimes - Port-Gentil</li>
-                    </ul>
-                </div>
-            </div>
+            <li>Institut Supérieur des Études Maritimes - Port-Gentil</li>
+          </ul>
         </div>
+      </div>
+    </div>
 
-        <div id="results-c" class="results">
+    <div id="results-c" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC C (Mathématiques et Physique)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Informatique et IA</h4>
-                    <ul class="institution-list">
-                        <li>Institut Africain d'Informatique (IAI) - Libreville</li>
-                        <li>École Supérieure des Technologies de l'Information</li>
-                        <li>Université des Sciences et Techniques de Masuku (USTM)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Ingénierie</h4>
-                    <ul class="institution-list">
-                        <li>École Polytechnique de Masuku (EPM) - Franceville</li>
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Informatique et IA</h4>
+          <ul class="institution-list">
+            <li>Institut Africain d'Informatique (IAI) - Libreville</li>
+            <li>École Supérieure des Technologies de l'Information</li>
+            <li>Université des Sciences et Techniques de Masuku (USTM)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Ingénierie</h4>
+          <ul class="institution-list">
+            <li>École Polytechnique de Masuku (EPM) - Franceville</li>
             <li>
               École Nationale Supérieure des Ingénieurs (ENSI) - Libreville
             </li>
-                        <li>Institut National des Sciences de l'Ingénieur (INSIG)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Mathématiques et Physique</h4>
-                    <ul class="institution-list">
-                        <li>Université des Sciences et Techniques de Masuku (USTM)</li>
-                        <li>Institut des Sciences Fondamentales et Appliquées (ISFA)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Génie des Énergies Renouvelables</h4>
-                    <ul class="institution-list">
-                        <li>Institut des Métiers de l'Énergie</li>
-                        <li>École Polytechnique de Masuku (EPM)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Aéronautique</h4>
-                    <ul class="institution-list">
-                        <li>Institut de Formation Aéronautique (IFA) - Libreville</li>
-                        <li>École Nationale Supérieure des Ingénieurs (ENSI)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Ingénierie Pétrolière et Gazière</h4>
-                    <ul class="institution-list">
+            <li>Institut National des Sciences de l'Ingénieur (INSIG)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Mathématiques et Physique</h4>
+          <ul class="institution-list">
+            <li>Université des Sciences et Techniques de Masuku (USTM)</li>
+            <li>Institut des Sciences Fondamentales et Appliquées (ISFA)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Génie des Énergies Renouvelables</h4>
+          <ul class="institution-list">
+            <li>Institut des Métiers de l'Énergie</li>
+            <li>École Polytechnique de Masuku (EPM)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Aéronautique</h4>
+          <ul class="institution-list">
+            <li>Institut de Formation Aéronautique (IFA) - Libreville</li>
+            <li>École Nationale Supérieure des Ingénieurs (ENSI)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Ingénierie Pétrolière et Gazière</h4>
+          <ul class="institution-list">
             <li>
               Centre Gabonais des Métiers du Pétrole (CGMP) - Port-Gentil
             </li>
-                        <li>Université de Port-Gentil (UPG)</li>
-                    </ul>
-                </div>
-            </div>
+            <li>Université de Port-Gentil (UPG)</li>
+          </ul>
         </div>
+      </div>
+    </div>
 
-        <div id="results-d" class="results">
+    <div id="results-d" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC D (Biologie et Sciences Naturelles)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Médecine</h4>
-                    <ul class="institution-list">
-                        <li>Université des Sciences de la Santé (USS) - Libreville</li>
-                        <li>Institut de Recherche Médicale du Gabon (IRM)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Pharmacie et Biologie</h4>
-                    <ul class="institution-list">
-                        <li>Université des Sciences de la Santé (USS) - Libreville</li>
-                        <li>Institut des Sciences Fondamentales et Appliquées (ISFA)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Médecine Vétérinaire</h4>
-                    <ul class="institution-list">
-                        <li>Institut de Recherche Agronomique et Forestière (IRAF)</li>
-                        <li>École Nationale des Eaux et Forêts (ENEF)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Biologie Marine</h4>
-                    <ul class="institution-list">
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Médecine</h4>
+          <ul class="institution-list">
+            <li>Université des Sciences de la Santé (USS) - Libreville</li>
+            <li>Institut de Recherche Médicale du Gabon (IRM)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Pharmacie et Biologie</h4>
+          <ul class="institution-list">
+            <li>Université des Sciences de la Santé (USS) - Libreville</li>
+            <li>Institut des Sciences Fondamentales et Appliquées (ISFA)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Médecine Vétérinaire</h4>
+          <ul class="institution-list">
+            <li>Institut de Recherche Agronomique et Forestière (IRAF)</li>
+            <li>École Nationale des Eaux et Forêts (ENEF)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Biologie Marine</h4>
+          <ul class="institution-list">
             <li>
               Institut National des Métiers de la Mer (INMM) - Port-Gentil
             </li>
             <li>
               Institut des Sciences de la Terre et de l'Environnement (ISTE)
             </li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Foresterie et Gestion de la Faune</h4>
-                    <ul class="institution-list">
-                        <li>École Nationale des Eaux et Forêts (ENEF) - Cap Estérias</li>
-                        <li>Institut de Recherche Agronomique et Forestière (IRAF)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Sciences du Sport</h4>
-                    <ul class="institution-list">
-                        <li>Institut Supérieur Pédagogique (ISP) - Libreville</li>
-                        <li>École Normale Supérieure (ENS) - Libreville</li>
-                    </ul>
-                </div>
-            </div>
+          </ul>
         </div>
+        <div class="result-card">
+          <h4>Foresterie et Gestion de la Faune</h4>
+          <ul class="institution-list">
+            <li>École Nationale des Eaux et Forêts (ENEF) - Cap Estérias</li>
+            <li>Institut de Recherche Agronomique et Forestière (IRAF)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Sciences du Sport</h4>
+          <ul class="institution-list">
+            <li>Institut Supérieur Pédagogique (ISP) - Libreville</li>
+            <li>École Normale Supérieure (ENS) - Libreville</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        <div id="results-e" class="results">
+    <div id="results-e" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC E (Techniques Industrielles)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Génie Civil et BTP</h4>
-                    <ul class="institution-list">
-                        <li>École Nationale des Travaux Publics (ENTP) - Libreville</li>
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Génie Civil et BTP</h4>
+          <ul class="institution-list">
+            <li>École Nationale des Travaux Publics (ENTP) - Libreville</li>
             <li>
               Institut National du Bâtiment et des Travaux Publics (INBTP)
             </li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Génie Mécanique</h4>
-                    <ul class="institution-list">
-                        <li>École Polytechnique de Masuku (EPM) - Franceville</li>
-                        <li>École des Formateurs Techniques (EFT)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Mines et Métallurgie</h4>
-                    <ul class="institution-list">
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Génie Mécanique</h4>
+          <ul class="institution-list">
+            <li>École Polytechnique de Masuku (EPM) - Franceville</li>
+            <li>École des Formateurs Techniques (EFT)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Mines et Métallurgie</h4>
+          <ul class="institution-list">
             <li>
               École des Mines et de la Métallurgie de Moanda (E3MG) - Moanda
             </li>
             <li>
               Institut des Sciences de la Terre et de l'Environnement (ISTE)
             </li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Agroalimentaire</h4>
-                    <ul class="institution-list">
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Agroalimentaire</h4>
+          <ul class="institution-list">
             <li>
               Institut National de Formation Agricole et Forestière (INFAF)
             </li>
-                        <li>Institut de Recherche Agronomique et Forestière (IRAF)</li>
-                    </ul>
-                </div>
-            </div>
+            <li>Institut de Recherche Agronomique et Forestière (IRAF)</li>
+          </ul>
         </div>
+      </div>
+    </div>
 
-        <div id="results-f" class="results">
+    <div id="results-f" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC F1-F6 (Techniques Spécialisées)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Électronique et Automatisme</h4>
-                    <ul class="institution-list">
-                        <li>Institut Supérieur de Technologie (IST) - Libreville</li>
-                        <li>École des Formateurs Techniques (EFT)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Maintenance Industrielle</h4>
-                    <ul class="institution-list">
-                        <li>École des Métiers de l'Énergie (EME)</li>
-                        <li>Centre Gabonais des Métiers du Pétrole (CGMP)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Production et Qualité</h4>
-                    <ul class="institution-list">
-                        <li>Institut Supérieur de Technologie (IST)</li>
-                        <li>École des Formateurs Techniques (EFT)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Informatique Industrielle</h4>
-                    <ul class="institution-list">
-                        <li>Institut Africain d'Informatique (IAI) - Libreville</li>
-                        <li>École Supérieure des Technologies de l'Information</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Électronique et Automatisme</h4>
+          <ul class="institution-list">
+            <li>Institut Supérieur de Technologie (IST) - Libreville</li>
+            <li>École des Formateurs Techniques (EFT)</li>
+          </ul>
         </div>
+        <div class="result-card">
+          <h4>Maintenance Industrielle</h4>
+          <ul class="institution-list">
+            <li>École des Métiers de l'Énergie (EME)</li>
+            <li>Centre Gabonais des Métiers du Pétrole (CGMP)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Production et Qualité</h4>
+          <ul class="institution-list">
+            <li>Institut Supérieur de Technologie (IST)</li>
+            <li>École des Formateurs Techniques (EFT)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Informatique Industrielle</h4>
+          <ul class="institution-list">
+            <li>Institut Africain d'Informatique (IAI) - Libreville</li>
+            <li>École Supérieure des Technologies de l'Information</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        <div id="results-g1" class="results">
+    <div id="results-g1" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC G1 (Techniques Commerciales)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Commerce et Marketing</h4>
-                    <ul class="institution-list">
-                        <li>École Nationale de Commerce (ENC) - Libreville</li>
-                        <li>École de Commerce et de Gestion (ECG)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Hôtellerie et Tourisme</h4>
-                    <ul class="institution-list">
-                        <li>Institut Supérieur de Technologie (IST)</li>
-                        <li>École de Commerce et de Gestion (ECG)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Vente et Distribution</h4>
-                    <ul class="institution-list">
-                        <li>École Nationale de Commerce (ENC)</li>
-                        <li>Institut National des Sciences de Gestion (INSG)</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Commerce et Marketing</h4>
+          <ul class="institution-list">
+            <li>École Nationale de Commerce (ENC) - Libreville</li>
+            <li>École de Commerce et de Gestion (ECG)</li>
+          </ul>
         </div>
+        <div class="result-card">
+          <h4>Hôtellerie et Tourisme</h4>
+          <ul class="institution-list">
+            <li>Institut Supérieur de Technologie (IST)</li>
+            <li>École de Commerce et de Gestion (ECG)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Vente et Distribution</h4>
+          <ul class="institution-list">
+            <li>École Nationale de Commerce (ENC)</li>
+            <li>Institut National des Sciences de Gestion (INSG)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        <div id="results-g2" class="results">
+    <div id="results-g2" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC G2 (Comptabilité et Gestion)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Comptabilité et Finance</h4>
-                    <ul class="institution-list">
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Comptabilité et Finance</h4>
+          <ul class="institution-list">
             <li>
               Institut National des Sciences de Gestion (INSG) - Libreville
             </li>
-                        <li>École de Commerce et de Gestion (ECG)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Audit et Contrôle</h4>
-                    <ul class="institution-list">
-                        <li>Institut National des Sciences de Gestion (INSG)</li>
-                        <li>École Nationale de Commerce (ENC)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Urbanisme et Aménagement</h4>
-                    <ul class="institution-list">
-                        <li>École Nationale des Travaux Publics (ENTP)</li>
+            <li>École de Commerce et de Gestion (ECG)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Audit et Contrôle</h4>
+          <ul class="institution-list">
+            <li>Institut National des Sciences de Gestion (INSG)</li>
+            <li>École Nationale de Commerce (ENC)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Urbanisme et Aménagement</h4>
+          <ul class="institution-list">
+            <li>École Nationale des Travaux Publics (ENTP)</li>
             <li>
               Institut des Sciences de la Terre et de l'Environnement (ISTE)
             </li>
-                    </ul>
-                </div>
-            </div>
+          </ul>
         </div>
+      </div>
+    </div>
 
-        <div id="results-g3" class="results">
+    <div id="results-g3" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC G3 (Techniques Administratives)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Administration Publique</h4>
-                    <ul class="institution-list">
-                        <li>École Nationale d'Administration (ENA) - Libreville</li>
-                        <li>École des Hautes Études en Administration (EHEA)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Production Audiovisuelle</h4>
-                    <ul class="institution-list">
-                        <li>Institut National de l'Audiovisuel (INA) - Libreville</li>
-                        <li>École des Arts et Design Numérique</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Secrétariat et Communication</h4>
-                    <ul class="institution-list">
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Administration Publique</h4>
+          <ul class="institution-list">
+            <li>École Nationale d'Administration (ENA) - Libreville</li>
+            <li>École des Hautes Études en Administration (EHEA)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Production Audiovisuelle</h4>
+          <ul class="institution-list">
+            <li>Institut National de l'Audiovisuel (INA) - Libreville</li>
+            <li>École des Arts et Design Numérique</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Secrétariat et Communication</h4>
+          <ul class="institution-list">
             <li>
               École des Sciences et Techniques de la Communication (ESTC)
             </li>
-                        <li>Institut Supérieur de Technologie (IST)</li>
-                    </ul>
-                </div>
-            </div>
+            <li>Institut Supérieur de Technologie (IST)</li>
+          </ul>
         </div>
+      </div>
+    </div>
 
-        <div id="results-ti" class="results">
+    <div id="results-ti" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC TI (Technologie Industrielle)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Génie Biomédical</h4>
-                    <ul class="institution-list">
-                        <li>Université des Sciences de la Santé (USS)</li>
-                        <li>Institut de Recherche Médicale du Gabon (IRM)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Génie Naval</h4>
-                    <ul class="institution-list">
-                        <li>Institut Supérieur des Études Maritimes - Port-Gentil</li>
-                        <li>Institut National des Métiers de la Mer (INMM)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>IA et Sciences des Données</h4>
-                    <ul class="institution-list">
-                        <li>Institut Africain d'Informatique (IAI)</li>
-                        <li>École Supérieure des Technologies de l'Information</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Génie Biomédical</h4>
+          <ul class="institution-list">
+            <li>Université des Sciences de la Santé (USS)</li>
+            <li>Institut de Recherche Médicale du Gabon (IRM)</li>
+          </ul>
         </div>
+        <div class="result-card">
+          <h4>Génie Naval</h4>
+          <ul class="institution-list">
+            <li>Institut Supérieur des Études Maritimes - Port-Gentil</li>
+            <li>Institut National des Métiers de la Mer (INMM)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>IA et Sciences des Données</h4>
+          <ul class="institution-list">
+            <li>Institut Africain d'Informatique (IAI)</li>
+            <li>École Supérieure des Technologies de l'Information</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        <div id="results-sms" class="results">
+    <div id="results-sms" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC SMS (Sciences Médico-Sociales)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Travail Social</h4>
-                    <ul class="institution-list">
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Travail Social</h4>
+          <ul class="institution-list">
             <li>
               Institut National de Formation d'Action Sanitaire et Sociale
               (INFASS)
             </li>
-                        <li>Institut Gabonais des Sciences Sociales et Politiques</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Sciences du Sport</h4>
-                    <ul class="institution-list">
-                        <li>Institut Supérieur Pédagogique (ISP)</li>
-                        <li>École Normale Supérieure (ENS)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Criminologie et Sécurité</h4>
-                    <ul class="institution-list">
-                        <li>Institut Gabonais des Sciences Sociales et Politiques</li>
-                        <li>École de Magistrature du Gabon (EMG)</li>
-                    </ul>
-                </div>
-            </div>
+            <li>Institut Gabonais des Sciences Sociales et Politiques</li>
+          </ul>
         </div>
+        <div class="result-card">
+          <h4>Sciences du Sport</h4>
+          <ul class="institution-list">
+            <li>Institut Supérieur Pédagogique (ISP)</li>
+            <li>École Normale Supérieure (ENS)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Criminologie et Sécurité</h4>
+          <ul class="institution-list">
+            <li>Institut Gabonais des Sciences Sociales et Politiques</li>
+            <li>École de Magistrature du Gabon (EMG)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        <div id="results-tq" class="results">
+    <div id="results-tq" class="results">
       <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
         Filières accessibles avec BAC TQ (Techniques Qualifiantes)
       </h3>
-            <div class="results-grid">
-                <div class="result-card">
-                    <h4>Stylisme et Design</h4>
-                    <ul class="institution-list">
-                        <li>École des Arts et Design Numérique</li>
-                        <li>Institut National des Arts (INA)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Hôtellerie et Tourisme</h4>
-                    <ul class="institution-list">
-                        <li>Institut Supérieur de Technologie (IST)</li>
-                        <li>École de Commerce et de Gestion (ECG)</li>
-                    </ul>
-                </div>
-                <div class="result-card">
-                    <h4>Arts et Métiers</h4>
-                    <ul class="institution-list">
-                        <li>Institut National des Arts (INA)</li>
-                        <li>École des Arts et Design Numérique</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="results-grid">
+        <div class="result-card">
+          <h4>Stylisme et Design</h4>
+          <ul class="institution-list">
+            <li>École des Arts et Design Numérique</li>
+            <li>Institut National des Arts (INA)</li>
+          </ul>
         </div>
-    </section>
+        <div class="result-card">
+          <h4>Hôtellerie et Tourisme</h4>
+          <ul class="institution-list">
+            <li>Institut Supérieur de Technologie (IST)</li>
+            <li>École de Commerce et de Gestion (ECG)</li>
+          </ul>
+        </div>
+        <div class="result-card">
+          <h4>Arts et Métiers</h4>
+          <ul class="institution-list">
+            <li>Institut National des Arts (INA)</li>
+            <li>École des Arts et Design Numérique</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Institutions Section -->
-    <section id="institutions" class="section">
-        <h2 class="section-title">Universités et Instituts Publics du Gabon</h2>
-        
-        <div class="institution-grid">
-            <div class="institution-card glow">
+  <!-- Institutions Section -->
+  <section id="institutions" class="section">
+    <h2 class="section-title">Universités et Instituts Publics du Gabon</h2>
+
+    <div class="institution-grid">
+      <div class="institution-card glow">
         <a href="https://aframgabon.com/">
           <div class="institution-name">
             Institut Franco-Américain de Management(AFRAM)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en management, finance et audit</p>
-                    <strong>Programmes:</strong> Gestion, Comptabilité, RH, Audit
-                </div>
-            </div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en management, finance et audit</p>
+          <strong>Programmes:</strong> Gestion, Comptabilité, RH, Audit
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://bbs-school.net/">
           <div class="institution-name">Bilingual Business School (BBS)</div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en gestion bilingue, management international</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en gestion bilingue, management international</p>
           <strong>Programmes:</strong> Gestion, Marketing, Commerce, Langues
           d'affaires
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.univga.org/espg-univga/">
           <div class="institution-name">
             Centre Gabonais des Métiers du Pétrole (CGMP)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Port-Gentil</div>
-                    <p>Formation spécialisée dans l'industrie pétrolière et gazière.</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Port-Gentil</div>
+          <p>Formation spécialisée dans l'industrie pétrolière et gazière.</p>
           <strong>Programmes:</strong> Ingénierie pétrolière, Raffinage,
           Maintenance pétrolière
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://gabon.collegedeparis.fr/">
           <div class="institution-name">
             Collège de Paris Supérieur Gabon (CPS)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Formations supérieures internationales en management, digital,
             ressources humaines.
           </p>
           <strong>Programmes:</strong> Bachelor et MBA en marketing digital,
           Management international, Communication et médias
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.e3mg.ga/">
           <div class="institution-name">
             École des Mines et de la Métallurgie (E3MG)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Moanda</div>
-                    <p>Formation en mines, métallurgie et géologie.</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Moanda</div>
+          <p>Formation en mines, métallurgie et géologie.</p>
           <strong>Programmes:</strong> Géologie, Exploitation minière,
           Métallurgie
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://em-gabon.nicepage.io/">
           <div class="institution-name">
             École de Management du Gabon (EM-GABON)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en management, marketing, gestion et santé</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en management, marketing, gestion et santé</p>
           <strong>Programmes:</strong> Gestion, Audit, Entrepreneuriat,
           Stratégie, Santé
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.ena.fr/">
           <div class="institution-name">
             École Nationale de l'Audiovisuel (ENA)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation dans les métiers de l'audiovisuel.</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation dans les métiers de l'audiovisuel.</p>
           <strong>Programmes:</strong> Montages. Réalisation, Son, Écriture de
           scénario
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://gabon-academie.com/listing/ecole-nationale-des-eaux-et-forets/">
           <div class="institution-name">
             École Nationale de Eaux et Forêts (ENEF)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en communication et en journalisme</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en communication et en journalisme</p>
           <strong>Programmes:</strong> Presse écrite, Radio, Télévision,
           Multimédia
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a
           href="https://www.orientation.ogooue-education.com/concours-dentre-a-lecole-normale-des-instituteurs-eni-2025-gabon/">
           <div class="institution-name">
             École Normale d'Instituteurs (ENI)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Formation internationale, gestion, communication, tourisme,
             hôtellerie, ingénierie.
@@ -1775,317 +1775,317 @@
           <strong>Programmes:</strong> Gestion des entreprises (Management,
           Marketing, RH), Comptabilité et finance, Comptabilité et
           finance,Tourisme, hôtellerie et restauration
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.facebook.com/ens.libreville/?locale=fr_FR">
           <div class="institution-name">École Normale Supérieure (ENS)</div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation des enseignants du secondaire et du supérieur.</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation des enseignants du secondaire et du supérieur.</p>
           <strong>Programmes:</strong> Sciences de l'éducation, Pédagogie,
           Formation d'enseignants
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.ena.fr/">
           <div class="institution-name">
             École nationale de la statistique (ENS-Stat)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en statistiques et en économie Appliquée</p>
-                    <strong>Programmes:</strong> Statistiques, Démographie, Actuariat
-                </div>
-            </div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en statistiques et en économie Appliquée</p>
+          <strong>Programmes:</strong> Statistiques, Démographie, Actuariat
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a
           href="https://www.facebook.com/p/%C3%89cole-Normale-Sup%C3%A9rieure-de-lEnseignement-Technique-Gabon-61561374894881/?locale=fr_FR">
           <div class="institution-name">
             École Normale Supérieure d'Enseignement Technique (ENSET)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville et Franceville</div>
-                    <p>Formation en éducation technique et formation d'enseignants</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville et Franceville</div>
+          <p>Formation en éducation technique et formation d'enseignants</p>
           <strong>Programmes:</strong> Génie civil, Génie électrique,
           Didactique des sciences
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://esiitech-gabon.com/">
           <div class="institution-name">
             École Supérieure des Technologies de l'Information (ESIITECH)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Formation avancée en technologies de l'information et intelligence
             artificielle.
           </p>
           <strong>Programmes:</strong> IA, Big Data, Cybersécurité,
           Développement web
-                </div>
-            </div>
+        </div>
+      </div>
 
-             <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.esgis.org/">
           <div class="institution-name">
             École Supérieure de Gestion Informatique et des Sciences (ESGIS)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en informatique et gestion</p>
-                    <strong>Programmes:</strong> Programmation, Réseaux, BDD, Marketing
-                </div>
-            </div>
-            
-            <div class="institution-card glow">
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en informatique et gestion</p>
+          <strong>Programmes:</strong> Programmation, Réseaux, BDD, Marketing
+        </div>
+      </div>
+
+      <div class="institution-card glow">
         <a href="https://www.facebook.com/groupeessig/?locale=fr_FR">
           <div class="institution-name">
             École Supérieure des Sciences d'Ingénierie et de Gestion(ESSIG)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en ingénierie et gestion d'entreprise</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en ingénierie et gestion d'entreprise</p>
           <strong>Programmes:</strong> Génie logiciel, Électronique,
           Comptabilité, Audit
-                </div>
-            </div>
-            
-                <div class="institution-card glow">
+        </div>
+      </div>
+
+      <div class="institution-card glow">
         <a href="https://www.iai-siege.com/">
           <div class="institution-name">
             Institut Africain d'Informatique (IAI)
           </div>
         </a>
-                    <div class="institution-details">
-                        <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Institut panafricain spécialisé dans les technologies de
             l'information et l'informatique.
           </p>
           <strong>Programmes:</strong> Informatique, IA, Cybersécurité,
           Développement logiciel
-                    </div>
-                </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="http://www.ifaeromaroc.com/">
           <div class="institution-name">
             Institut de Formation Aéronautique (IFA)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Formation spécialisée dans l'aéronautique et l'aviation civile.
           </p>
           <strong>Programmes:</strong> Pilotage, Maintenance aéronautique,
           Contrôle aérien
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.iheegabon.com/">
           <div class="institution-name">
             Institut des Hautes Études Économiques (IHEE)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en sciences Économique et gestion</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en sciences Économique et gestion</p>
           <strong>Programmes:</strong> Économie, Analyse financière, Banque,
           Évaluation de projet
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.iitg-gabon.org/">
           <div class="institution-name">
             Institut International de Technologie et de Gestion (IITG)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Formation dans les metiers de la technologie et du management .
           </p>
           <strong>Programmes:</strong> Gestion et commerce, Développement
           durable et environnement, Génie industriel et production, Logistique
           et organisation
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.univga.org/esci-univga/">
           <div class="institution-name">
             Institut de Journalisme du Gabon (IJG)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en communication et en journalisme</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en communication et en journalisme</p>
           <strong>Programmes:</strong> Presse écrite, Radio, Télévision,
           Multimédia
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.inptic-ga.org/">
           <div class="institution-name">
             Institut National de la Poste, des Technologies de l'Information
             et de la Communication (INPTIC)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en communication et en journalisme</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en communication et en journalisme</p>
           <strong>Programmes:</strong> Presse écrite, Radio, Télévision,
           Multimédia
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.orientation.ogooue-education.com/listing/institut-national-sciences-gestion/">
           <div class="institution-name">
             Institut National des Sciences de Gestion (INSG)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Spécialisé dans la formation en gestion, comptabilité et
             administration des entreprises.
           </p>
           <strong>Programmes:</strong> Gestion, Comptabilité, Finance,
           Management
-                </div>
-            </div>
+        </div>
+      </div>
 
-             <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://issante.org/?lang=en">
           <div class="institution-name">
             Institut Supérieur de Santé (ISS)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en communication et en journalisme</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en communication et en journalisme</p>
           <strong>Programmes:</strong> Presse écrite, Radio, Télévision,
           Multimédia
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://ist.univ-lbv.com/">
           <div class="institution-name">
             Institut Supérieur de Technologie (IST)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en communication et en journalisme</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en communication et en journalisme</p>
           <strong>Programmes:</strong> Presse écrite, Radio, Télévision,
           Multimédia
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.ista-cemac.org/">
           <div class="institution-name">
             Institut Supérieur des Technologies Appliquées (ISTA)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en TIC, Réseaux et systèmes</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en TIC, Réseaux et systèmes</p>
           <strong>Programmes:</strong> Réseaux, Télécom, Cybersécurité,
           Infographie
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.orientation.ogooue-education.com/listing/institut-des-techniques-avancees/">
           <div class="institution-name">
             Institut des Techniques Avancées (ITA)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Spécialisé dans le domaine des technologies.</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Spécialisé dans le domaine des technologies.</p>
           <strong>Programmes:</strong> Action commerciale, Comptabilité et
           gestion, gestion des RH, Électronique et Informatique
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.orientation.ogooue-education.com/listing/institut-des-technologies-dowendo/">
           <div class="institution-name">
             Institut de Technologie d'Owendo (ITO)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Owendo</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Owendo</div>
           <p>
             Formation en électricité, électronique et maintenance industrielle
           </p>
           <strong>Programmes:</strong> Électrotechnique, Maintenance,
           Automation
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.orientation.ogooue-education.com/listing/universite-africaine-des-sciences/">
           <div class="institution-name">
             Université Africaine des Sciences (UAS)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Formation Pluridisciplinaire, orientée sciences, technologie et
             ingénierie.
           </p>
           <strong>Programmes:</strong> Mathématiques, Physique, Chimie,
           Biologie, Informatique, Génie industriel, Énergie renouvelable
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.orientation.ogooue-education.com/listing/universite-franco-gabonaise-saint-exupery/">
           <div class="institution-name">
             Université Franco-gabonaise Saint-Exupéry (UFGSE)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Formation artistique et créative dans le design et les arts
             numériques.
           </p>
           <strong>Programmes:</strong> Design graphique, Arts numériques,
           Stylisme, Animation
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://uil-universite.com/presentation-uil/">
           <div class="institution-name">
             Université Internationale de Libreville (UIL)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Formation Pluridisciplinaire — Droit, Sciences politiques,
             Communication, Informatique de gestion, Langues, Marketing, RH…
@@ -2093,99 +2093,99 @@
           <strong>Programmes:</strong> Droit (Droit des affaires, Droit
           international), Sciences politiques, Communication d'entreprise,
           Informatique de gestion
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://iuso-sne.com/">
           <div class="institution-name">
             Université Internationale des Sciences de l'Organisation (UISO)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation en organisation et management</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation en organisation et management</p>
           <strong>Programmes:</strong>Gestion des organisations, Logistique,
           Audit, RH
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://univ-ln.academy/nos-etudiants/">
           <div class="institution-name">Université Libreville Nord (ULN)</div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Formation pluridisciplinaire (Sciences humaines, droit, économie,
             gestion, communication.
           </p>
           <strong>Programmes:</strong> Droit, Sciences politiques,
           communication d'entreprise , Informatique de gestion
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://www.ung.ga/dirpole"></a>
         <div class="institution-name">
           Université Numérique du Gabon (UNG)
         </div>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
-                    <p>Formation a distance dans les domaines de l'informatique.</p>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
+          <p>Formation a distance dans les domaines de l'informatique.</p>
           <strong>Programmes:</strong>Informatique, Gestion, Communication
           digitale
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://univuob.org/">
           <div class="institution-name">Université Omar Bongo (UOB)</div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             La plus grande université du Gabon, proposant des formations dans
             tous les domaines académiques.
           </p>
           <strong>Programmes:</strong> Droit, Lettres, Sciences Économiques,
           Médecine, Sciences, Technologie
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://my-inscription.online/">
           <div class="institution-name">
             Université des Sciences de la Santé (USS)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Libreville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Libreville</div>
           <p>
             Dédiée aux sciences médicales et de la santé, formant les futurs
             professionnels de santé.
           </p>
           <strong>Programmes:</strong> Médecine, Pharmacie, Odontologie,
           Sciences infirmières
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="institution-card glow">
+      <div class="institution-card glow">
         <a href="https://univ-masuku.org/">
           <div class="institution-name">
             Université des Sciences et Techniques de Masuku (USTM)
           </div>
         </a>
-                <div class="institution-details">
-                    <div class="institution-location">📍 Franceville</div>
+        <div class="institution-details">
+          <div class="institution-location">📍 Franceville</div>
           <p>
             Spécialisée dans les sciences et technologies, reconnue pour ses
             programmes d'ingénierie.
           </p>
           <strong>Programmes:</strong> Informatique, Mathématiques, Physique,
           Chimie, Ingénierie
-                </div>
-            </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2230,7 +2230,7 @@
         </a>
         <div class="institution-details">
           <p>
-            Études bilingues, formations de pointe, perspectives d’emploi
+            Études bilingues, formations de pointe, perspectives d'emploi
             intéressantes.
           </p>
           <strong>Domaines :</strong> ingénierie, santé, administration des
@@ -2281,7 +2281,7 @@
       </div>
 
       <div class="institution2-card glow">
-        <a href="USA/index.html">
+        <a href="usa/index.html">
           <img src="images/usa.avif" alt="Drapeau des États-Unis" class="institution-img" />
           <div class="institution2-name">ÉTATS-UNIS</div>
         </a>
@@ -2296,13 +2296,13 @@
       </div>
 
       <div class="institution2-card glow">
-        <a href="FRANCE/index.html">
+        <a href="france/index.html">
           <img src="images/france.avif" alt="Drapeau de la France" class="institution-img" />
           <div class="institution2-name">FRANCE</div>
         </a>
         <div class="institution-details">
           <p>
-            Destinations d’études prisées, formations de renommée
+            Destinations d'études prisées, formations de renommée
             internationale.
           </p>
           <strong>Domaines :</strong> ingénierie, médecine, commerce, arts...
@@ -2322,7 +2322,7 @@
       </div>
 
       <div class="institution2-card glow">
-        <a href="#">
+        <a href="./Japon/index.html">
           <img src="images/japon.avif" alt="Drapeau du Japon" class="institution-img" />
           <div class="institution2-name">JAPON</div>
         </a>
@@ -2334,7 +2334,7 @@
       </div>
 
       <div class="institution2-card glow">
-        <a href="#">
+        <a href="./Maroc/index.html">
           <img src="images/maroc.avif" alt="Drapeau du Maroc" class="institution-img" />
           <div class="institution2-name">MAROC</div>
         </a>
@@ -2349,7 +2349,7 @@
       </div>
 
       <div class="institution2-card glow">
-        <a href="#">
+        <a href="./Roumanie/index.html">
           <img src="images/roumanie.avif" alt="Drapeau de la Roumanie" class="institution-img" />
           <div class="institution2-name">ROUMANIE</div>
         </a>
@@ -2363,7 +2363,7 @@
       </div>
 
       <div class="institution2-card glow">
-        <a href="#">
+        <a href="./Royaume-Uni/index.html">
           <img src="images/uk.avif" alt="Drapeau du Royaume-Uni" class="institution-img" />
           <div class="institution2-name">ROYAUME-UNI (UK)</div>
         </a>
@@ -2375,7 +2375,7 @@
       </div>
 
       <div class="institution2-card glow">
-        <a href="#">
+        <a href="./Russie/index.html">
           <img src="images/russie.avif" alt="Drapeau de la Russie" class="institution-img" />
           <div class="institution2-name">RUSSIE</div>
         </a>
@@ -2387,19 +2387,19 @@
       </div>
 
       <div class="institution2-card glow">
-        <a href="#">
+        <a href="./Senegal/index.html">
           <img src="images/senegal.avif" alt="Drapeau du Sénégal" class="institution-img" />
           <div class="institution2-name">SÉNÉGAL</div>
         </a>
         <div class="institution-details">
-          <p>Centres d’enseignement reconnus en Afrique de l’Ouest.</p>
+          <p>Centres d'enseignement reconnus en Afrique de l'Ouest.</p>
           <strong>Domaines :</strong> sciences politiques, administration,
           journalisme...
         </div>
       </div>
 
       <div class="institution2-card glow">
-        <a href="#">
+        <a href="./Suisse/index.html">
           <img src="images/suisse.avif" alt="Drapeau de la Suisse" class="institution-img" />
           <div class="institution2-name">SUISSE</div>
         </a>
@@ -2411,7 +2411,7 @@
       </div>
 
       <div class="institution2-card glow">
-        <a href="#">
+        <a href="./Tunisie/index.html">
           <img src="images/tunisie.avif" alt="Drapeau de la Tunisie" class="institution-img" />
           <div class="institution2-name">TUNISIE</div>
         </a>
@@ -2436,8 +2436,8 @@
           gestion...
         </div>
       </div>
-        </div>
-    </section>
+    </div>
+  </section>
 
   <div id="results-a1" class="results">
     <h3 style="color: var(--accent-purple); margin-bottom: 2rem">
@@ -2497,354 +2497,354 @@
     </div>
   </div>
 
-    <!-- Matching Table Section -->
-    <section id="matching" class="section">
-        <h2 class="section-title">Table de Correspondance BAC - Filières</h2>
-        
-        <div class="table-container glow">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Filière / Programme</th>
-                        <th>BAC A1</th>
-                        <th>BAC A2</th>
-                        <th>BAC B</th>
-                        <th>BAC C</th>
-                        <th>BAC D</th>
-                        <th>BAC E</th>
-                        <th>BAC F</th>
-                        <th>BAC G1</th>
-                        <th>BAC G2</th>
-                        <th>BAC G3</th>
-                        <th>BAC TI</th>
-                        <th>BAC SMS</th>
-                        <th>BAC TQ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Droit</strong></td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Informatique & IA</strong></td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Médecine</strong></td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Génie Civil</strong></td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Économie & Gestion</strong></td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Biologie Marine</strong></td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Logistique & Transport</strong></td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Travail Social</strong></td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Hôtellerie & Tourisme</strong></td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Aéronautique</strong></td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Génie Biomédical</strong></td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Stylisme & Design</strong></td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Sciences du Sport</strong></td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Ingénierie Pétrolière</strong></td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Criminologie</strong></td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-                        <td class="check-yes">✅</td>
-            <td class="check-no">🟠</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+  <!-- Matching Table Section -->
+  <section id="matching" class="section">
+    <h2 class="section-title">Table de Correspondance BAC - Filières</h2>
 
-    <!-- Tips Section -->
-    <section id="tips" class="section">
-        <h2 class="section-title">Conseils pour Réussir Votre Orientation</h2>
-        
-        <div class="tips-grid">
-            <div class="tip-card glow">
-                <div class="tip-icon">🎯</div>
-                <div class="tip-title">Connaissez vos passions</div>
+    <div class="table-container glow">
+      <table>
+        <thead>
+          <tr>
+            <th>Filière / Programme</th>
+            <th>BAC A1</th>
+            <th>BAC A2</th>
+            <th>BAC B</th>
+            <th>BAC C</th>
+            <th>BAC D</th>
+            <th>BAC E</th>
+            <th>BAC F</th>
+            <th>BAC G1</th>
+            <th>BAC G2</th>
+            <th>BAC G3</th>
+            <th>BAC TI</th>
+            <th>BAC SMS</th>
+            <th>BAC TQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Droit</strong></td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Informatique & IA</strong></td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Médecine</strong></td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Génie Civil</strong></td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Économie & Gestion</strong></td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Biologie Marine</strong></td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Logistique & Transport</strong></td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Travail Social</strong></td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Hôtellerie & Tourisme</strong></td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+          </tr>
+          <tr>
+            <td><strong>Aéronautique</strong></td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Génie Biomédical</strong></td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Stylisme & Design</strong></td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+          </tr>
+          <tr>
+            <td><strong>Sciences du Sport</strong></td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Ingénierie Pétrolière</strong></td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+          </tr>
+          <tr>
+            <td><strong>Criminologie</strong></td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+            <td class="check-yes">✅</td>
+            <td class="check-no">🟠</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Tips Section -->
+  <section id="tips" class="section">
+    <h2 class="section-title">Conseils pour Réussir Votre Orientation</h2>
+
+    <div class="tips-grid">
+      <div class="tip-card glow">
+        <div class="tip-icon">🎯</div>
+        <div class="tip-title">Connaissez vos passions</div>
         <p>
           Identifiez les domaines qui vous passionnent vraiment. Votre
           motivation sera votre meilleur atout pour réussir vos études
           supérieures et votre carrière professionnelle.
         </p>
-            </div>
+      </div>
 
-            <div class="tip-card glow">
-                <div class="tip-icon">📊</div>
-                <div class="tip-title">Évaluez vos forces académiques</div>
+      <div class="tip-card glow">
+        <div class="tip-icon">📊</div>
+        <div class="tip-title">Évaluez vos forces académiques</div>
         <p>
           Analysez vos résultats dans différentes matières pour choisir un
           domaine où vous excellez naturellement. Vos points forts peuvent
           guider votre choix de filière.
         </p>
-            </div>
+      </div>
 
-            <div class="tip-card glow">
-                <div class="tip-icon">🔍</div>
-                <div class="tip-title">Explorez les débouchés</div>
+      <div class="tip-card glow">
+        <div class="tip-icon">🔍</div>
+        <div class="tip-title">Explorez les débouchés</div>
         <p>
           Renseignez-vous sur les opportunités d'emploi et les perspectives de
           carrière dans votre domaine d'intérêt. Le marché de l'emploi au
           Gabon évolue constamment.
         </p>
-            </div>
+      </div>
 
-            <div class="tip-card glow">
-                <div class="tip-icon">🤝</div>
-                <div class="tip-title">Consultez les professionnels</div>
+      <div class="tip-card glow">
+        <div class="tip-icon">🤝</div>
+        <div class="tip-title">Consultez les professionnels</div>
         <p>
           Échangez avec des professionnels du secteur pour avoir une vision
           réaliste du métier qui vous intéresse. Leurs expériences peuvent
           éclairer votre choix.
         </p>
-            </div>
+      </div>
 
-            <div class="tip-card glow">
-                <div class="tip-icon">🎓</div>
-                <div class="tip-title">Visitez les établissements</div>
+      <div class="tip-card glow">
+        <div class="tip-icon">🎓</div>
+        <div class="tip-title">Visitez les établissements</div>
         <p>
           Participez aux journées portes ouvertes des universités et
           instituts. Découvrez les infrastructures, rencontrez les enseignants
           et les étudiants.
         </p>
-            </div>
+      </div>
 
-            <div class="tip-card glow">
-                <div class="tip-icon">⭐</div>
-                <div class="tip-title">Planifiez votre parcours</div>
+      <div class="tip-card glow">
+        <div class="tip-icon">⭐</div>
+        <div class="tip-title">Planifiez votre parcours</div>
         <p>
           Réfléchissez aux différentes étapes de votre formation. Certains
           métiers nécessitent des spécialisations ou des formations
           complémentaires.
         </p>
-            </div>
+      </div>
 
-            <div class="tip-card glow">
-                <div class="tip-icon">🚀</div>
-                <div class="tip-title">Restez ouvert d'esprit</div>
+      <div class="tip-card glow">
+        <div class="tip-icon">🚀</div>
+        <div class="tip-title">Restez ouvert d'esprit</div>
         <p>
           Ne vous limitez pas aux options les plus connues. Explorez des
           domaines que vous pourriez ne pas envisager d'emblée. Parfois, des
           filières peu médiatisées peuvent offrir d'excellentes perspectives
           professionnelles.
         </p>
-            </div>
+      </div>
 
-            <div class="tip-card glow">
-                <div class="tip-icon">🎨</div>
+      <div class="tip-card glow">
+        <div class="tip-icon">🎨</div>
         <div class="tip-title">
           Tenez compte de vos valeurs et de vos ambitions
         </div>
@@ -2854,19 +2854,19 @@
           stabilité ? Vos valeurs vous orienteront vers le métier le plus
           épanouissant.
         </p>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!--Process pour l'admission-->
+  <!--Process pour l'admission-->
 
-    <section id="timeline" class="section">
-        <div class="container">
-            <h2 class="section-title">Processus d'Orientation</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+  <section id="timeline" class="section">
+    <div class="container">
+      <h2 class="section-title">Processus d'Orientation</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
             <h3 style="color: #a855f7; margin-bottom: 0.5rem">
               1. Identification de votre BAC
             </h3>
@@ -2874,11 +2874,11 @@
               Déterminez votre série de Baccalauréat (A1, A2, B, C, D, E, F,
               G1, G2) et vos résultats.
             </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
             <h3 style="color: #a855f7; margin-bottom: 0.5rem">
               2. Exploration des Filières
             </h3>
@@ -2886,11 +2886,11 @@
               Consultez notre table de correspondance pour découvrir les
               programmes accessibles.
             </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
             <h3 style="color: #a855f7; margin-bottom: 0.5rem">
               3. Choix des Universités
             </h3>
@@ -2898,11 +2898,11 @@
               Sélectionnez les établissements qui proposent vos filières
               préférées.
             </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
             <h3 style="color: #a855f7; margin-bottom: 0.5rem">
               4. Candidature
             </h3>
@@ -2910,11 +2910,11 @@
               Préparez et soumettez vos dossiers de candidature avant les
               dates limites.
             </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
             <h3 style="color: #a855f7; margin-bottom: 0.5rem">
               5. Inscription
             </h3>
@@ -2922,22 +2922,22 @@
               Finalisez votre inscription une fois accepté dans votre
               programme choisi.
             </p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="section">
-        <h2 class="section-title">Questions Fréquentes</h2>
-        
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">
-                    Comment choisir entre plusieurs universités pour le même programme ?
-                </button>
-                <div class="faq-answer">
+  <!-- FAQ Section -->
+  <section id="faq" class="section">
+    <h2 class="section-title">Questions Fréquentes</h2>
+
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">
+          Comment choisir entre plusieurs universités pour le même programme ?
+        </button>
+        <div class="faq-answer">
           <p>
             Considérez plusieurs facteurs : la localisation géographique, la
             réputation de l'université dans le domaine, les infrastructures
@@ -2945,14 +2945,14 @@
             stages, les partenariats internationaux, et les témoignages
             d'anciens étudiants.
           </p>
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    Puis-je changer d'orientation après la première année ?
-                </button>
-                <div class="faq-answer">
+      <div class="faq-item">
+        <button class="faq-question">
+          Puis-je changer d'orientation après la première année ?
+        </button>
+        <div class="faq-answer">
           <p>
             Oui, la plupart des universités permettent les réorientations
             après la première année. Cependant, certains crédits peuvent ne
@@ -2960,14 +2960,14 @@
             important de se renseigner sur les modalités de passerelles entre
             filières.
           </p>
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    Y a-t-il des bourses d'études disponibles ?
-                </button>
-                <div class="faq-answer">
+      <div class="faq-item">
+        <button class="faq-question">
+          Y a-t-il des bourses d'études disponibles ?
+        </button>
+        <div class="faq-answer">
           <p>
             Le gouvernement gabonais offre diverses bourses selon les critères
             sociaux et de mérite. Il existe aussi des bourses d'excellence
@@ -2975,28 +2975,28 @@
             ministère de l'éducation nationale et des services sociaux des
             universités.
           </p>
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    Quels sont les critères d'admission dans les universités publiques ?
-                </button>
-                <div class="faq-answer">
+      <div class="faq-item">
+        <button class="faq-question">
+          Quels sont les critères d'admission dans les universités publiques ?
+        </button>
+        <div class="faq-answer">
           <p>
             Généralement, il faut avoir obtenu le baccalauréat avec une
             moyenne minimale qui varie selon l'université et le programme
             choisi. Certaines filières sélectives peuvent demander des tests
             d'aptitude ou des entretiens complémentaires.
           </p>
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    Comment se déroulent les inscriptions universitaires ?
-                </button>
-                <div class="faq-answer">
+      <div class="faq-item">
+        <button class="faq-question">
+          Comment se déroulent les inscriptions universitaires ?
+        </button>
+        <div class="faq-answer">
           <p>
             Les inscriptions se font généralement en ligne sur les plateformes
             des universités, suivies du dépôt des dossiers physiques. Les
@@ -3004,67 +3004,67 @@
             publication des résultats du baccalauréat. Il est crucial de
             respecter les délais.
           </p>
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    Puis-je étudier à l'étranger avec mon bac gabonais ?
-                </button>
-                <div class="faq-answer">
+      <div class="faq-item">
+        <button class="faq-question">
+          Puis-je étudier à l'étranger avec mon bac gabonais ?
+        </button>
+        <div class="faq-answer">
           <p>
             Oui, le baccalauréat gabonais est reconnu dans de nombreux pays,
             notamment en France et dans d'autres pays francophones. Cependant,
             certains pays peuvent demander des équivalences ou des tests de
             langue supplémentaires.
           </p>
-                </div>
-            </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contactez-Nous</h2>
-            <div class="contact-cards">
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contactez-Nous</h2>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
           <h3 style="color: #a855f7; margin-bottom: 1rem">Email</h3>
           <p style="margin-bottom: 0.5rem">contact@orientationplus.ga</p>
-                    <p>support@orientationplus.ga</p>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">📱</div>
+          <p>support@orientationplus.ga</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📱</div>
           <h3 style="color: #a855f7; margin-bottom: 1rem">Téléphone</h3>
           <p style="margin-bottom: 0.5rem">+241 01 23 45 67</p>
-                    <p>+241 07 89 10 11</p>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">📍</div>
+          <p>+241 07 89 10 11</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
           <h3 style="color: #a855f7; margin-bottom: 1rem">Adresse</h3>
           <p style="margin-bottom: 0.5rem">
             Ministère de l'Éducation Nationale
           </p>
-                    <p>BP 6, Libreville, Gabon</p>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">⏰</div>
+          <p>BP 6, Libreville, Gabon</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">⏰</div>
           <h3 style="color: #a855f7; margin-bottom: 1rem">Horaires</h3>
           <p style="margin-bottom: 0.5rem">Lun - Ven: 8h00 - 17h00</p>
-                    <p>Sam: 8h00 - 12h00</p>
-                </div>
-            </div>
+          <p>Sam: 8h00 - 12h00</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">ORIENT</div>
-            <p class="footer-text">
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">ORIENT</div>
+      <p class="footer-text">
         Votre guide vers l'excellence académique au Gabon.<br />
         Construisons ensemble votre avenir professionnel.
       </p>
@@ -3424,83 +3424,83 @@
       <div class="footer-logo">ORIENT</div>
       <p class="footer-text">
         Votre guide vers l'excellence académique au Gabon.<br />
-                Construisons ensemble votre avenir professionnel.
-            </p>
-            <div class="footer-links">
-                <span>© 2025 ORIENT</span>
-                <span>•</span>
-                <span>Éducation Supérieure Gabon</span>
-                <span>•</span>
-                <span>Plateforme d'Orientation</span>
-                <span>•</span>
-                <span>Ministère de l'Éducation Nationale</span>
-            </div>
-        </div>
-    </footer>
+        Construisons ensemble votre avenir professionnel.
+      </p>
+      <div class="footer-links">
+        <span>© 2025 ORIENT</span>
+        <span>•</span>
+        <span>Éducation Supérieure Gabon</span>
+        <span>•</span>
+        <span>Plateforme d'Orientation</span>
+        <span>•</span>
+        <span>Ministère de l'Éducation Nationale</span>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        // Pure CSS-like JavaScript for interactivity (minimal)
+  <script>
+    // Pure CSS-like JavaScript for interactivity (minimal)
     document.addEventListener("DOMContentLoaded", function () {
-            // BAC selection handler
-            const bacRadios = document.querySelectorAll('input[name="bac"]');
+      // BAC selection handler
+      const bacRadios = document.querySelectorAll('input[name="bac"]');
       const resultsSections = document.querySelectorAll(".results");
-            
+
       bacRadios.forEach((radio) => {
         radio.addEventListener("change", function () {
-                    // Hide all results
+          // Hide all results
           resultsSections.forEach((section) => {
             section.classList.remove("active");
-                    });
-                    
-                    // Show selected BAC results
+          });
+
+          // Show selected BAC results
           const selectedResults = document.getElementById(
             "results-" + this.value.toLowerCase()
           );
-                    if (selectedResults) {
+          if (selectedResults) {
             selectedResults.classList.add("active");
-                    }
-                });
-            });
+          }
+        });
+      });
 
-            // FAQ accordion
+      // FAQ accordion
       const faqItems = document.querySelectorAll(".faq-item");
-            
+
       faqItems.forEach((item) => {
         const question = item.querySelector(".faq-question");
-                
-        question.addEventListener("click", function () {
-                    // Close other items
-          faqItems.forEach((otherItem) => {
-                        if (otherItem !== item) {
-              otherItem.classList.remove("active");
-                        }
-                    });
-                    
-                    // Toggle current item
-          item.classList.toggle("active");
-                });
-            });
 
-            // Smooth scrolling for navigation links
-            const navLinks = document.querySelectorAll('a[href^="#"]');
-            
+        question.addEventListener("click", function () {
+          // Close other items
+          faqItems.forEach((otherItem) => {
+            if (otherItem !== item) {
+              otherItem.classList.remove("active");
+            }
+          });
+
+          // Toggle current item
+          item.classList.toggle("active");
+        });
+      });
+
+      // Smooth scrolling for navigation links
+      const navLinks = document.querySelectorAll('a[href^="#"]');
+
       navLinks.forEach((link) => {
         link.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    
+          e.preventDefault();
+
           const targetId = this.getAttribute("href");
-                    const targetSection = document.querySelector(targetId);
-                    
-                    if (targetSection) {
-                        targetSection.scrollIntoView({
+          const targetSection = document.querySelector(targetId);
+
+          if (targetSection) {
+            targetSection.scrollIntoView({
               behavior: "smooth",
               block: "start",
-                        });
-                    }
-                });
             });
+          }
         });
-    </script>
+      });
+    });
+  </script>
 </body>
 
 </html>

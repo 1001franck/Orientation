@@ -1,0 +1,526 @@
+:root {
+    --russian-white: #FFFFFF;
+    --russian-blue: #0039A6;
+    --russian-red: #D52B1E;
+    --text-color: #333;
+    --background-color: #f5f5f5;
+    --card-background: #fff;
+    --shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--russian-blue);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--russian-white);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.flag-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: var(--russian-white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--russian-red);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1513326738677-b964603b136d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--russian-white);
+    padding-top: 80px;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-flag {
+    margin-bottom: 2rem;
+}
+
+.flag-large {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--russian-white);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--russian-red);
+    color: var(--russian-white);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--russian-white);
+    color: var(--russian-white);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+/* Section Styles */
+.country-section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--russian-blue);
+}
+
+/* Presentation Section */
+.presentation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.presentation-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.presentation-card:hover {
+    transform: translateY(-5px);
+}
+
+.presentation-icon {
+    font-size: 2.5rem;
+    color: var(--russian-blue);
+    margin-bottom: 1rem;
+}
+
+.feature-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.feature-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: "•";
+    color: var(--russian-red);
+    position: absolute;
+    left: 0;
+}
+
+/* Universities Section */
+.university-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.university-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+}
+
+.university-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.university-info span {
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+}
+
+.specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.specialty {
+    background: var(--russian-blue);
+    color: var(--russian-white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.programs {
+    margin-top: 1rem;
+}
+
+.programs h5 {
+    color: var(--russian-blue);
+    margin-bottom: 0.5rem;
+}
+
+.programs ul {
+    list-style: none;
+}
+
+.programs li {
+    margin-bottom: 0.3rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.programs li::before {
+    content: "→";
+    color: var(--russian-red);
+    position: absolute;
+    left: 0;
+}
+
+.university-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--russian-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.university-link:hover {
+    color: var(--russian-red);
+}
+
+/* Costs Section */
+.cost-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.cost-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.cost-card:hover {
+    transform: translateY(-5px);
+}
+
+.cost-icon {
+    font-size: 2.5rem;
+    color: var(--russian-blue);
+    margin-bottom: 1rem;
+}
+
+.cost-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.cost-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.cost-list li::before {
+    content: "•";
+    color: var(--russian-red);
+    position: absolute;
+    left: 0;
+}
+
+.cost-note {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Visa Section */
+.visa-info {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.visa-info h3 {
+    color: var(--russian-blue);
+    margin-bottom: 1rem;
+}
+
+.visa-info ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.visa-info li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.visa-info li::before {
+    content: "✓";
+    color: var(--russian-red);
+    position: absolute;
+    left: 0;
+}
+
+.visa-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.timeline-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.timeline-item i {
+    font-size: 2rem;
+    color: var(--russian-blue);
+    margin-bottom: 1rem;
+}
+
+/* Housing Section */
+.housing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.housing-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.housing-card:hover {
+    transform: translateY(-5px);
+}
+
+.housing-icon {
+    font-size: 2.5rem;
+    color: var(--russian-blue);
+    margin-bottom: 1rem;
+}
+
+.housing-features {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.housing-features li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.housing-features li::before {
+    content: "•";
+    color: var(--russian-red);
+    position: absolute;
+    left: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--russian-blue);
+    color: var(--russian-white);
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--russian-white);
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--russian-red);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .presentation-grid,
+    .university-grid,
+    .cost-grid,
+    .housing-grid {
+        grid-template-columns: 1fr;
+    }
+}

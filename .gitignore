@@ -1,0 +1,25 @@
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Dépendances
+node_modules/
+vendor/
+
+# Fichiers de build
+dist/
+build/
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.temp
+.cache/ 

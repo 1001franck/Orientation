@@ -1,35 +1,66 @@
-# Plateforme d'Orientation Universitaire du Gabon
+# Guide d'Orientation pour les Études à l'Étranger
 
-lien : https://deft-cuchufli-e9691f.netlify.app/
+Ce projet est un guide complet pour les étudiants souhaitant poursuivre leurs études à l'étranger. Il fournit des informations détaillées sur les universités, les coûts, les visas et la vie étudiante dans différents pays.
 
-## 🟣 Description du projet
+## Structure du Projet
 
-** La Plateforme d'Orientation Universitaire du Gabon ** est un **site statique, moderne et léger**, destiné à **aider les nouveaux bacheliers** gabonais à trouver leur voie dans l'enseignement supérieur.
+```
+ORIENTATION/
+├── assets/                 # Ressources communes
+│   └── styles.css         # Styles CSS communs
+├── [Pays]/                # Dossiers par pays
+│   ├── index.html        # Page principale du pays
+│   └── styles.css        # Styles spécifiques au pays
+├── images/               # Images et ressources graphiques
+└── README.md            # Documentation du projet
+```
 
-Ce site a été créé afin de :
+## Pays Disponibles
 
-- **Proposer un annuaire exhaustif des universités, grandes écoles et instituts du Gabon**
-- **Présenter les formations** (filières, programmes) **offertes par chaque établissement**
-- **Indiquer la localisation géographique** de chaque école afin d'en faciliter l'accès
-- **Aider les élèves de terminale** à identifier, en fonction de leur bac, les formations auxquelles ils peuvent postuler
-- **Offrir une expérience moderne, rapide, responsive et esthétique**, avec une **interface sombre, futuriste, magique et attrayante**
+- 🇫🇷 France
+- 🇺🇸 États-Unis
+- 🇨🇦 Canada
+- 🇩🇪 Allemagne
+- 🇧🇪 Belgique
+- 🇨🇳 Chine
+- 🇰🇷 Corée
+- 🇪🇸 Espagne
+- 🇮🇹 Italie
+- 🇯🇵 Japon
+- 🇲🇦 Maroc
+- 🇷🇴 Roumanie
+- 🇬🇧 Royaume-Uni
+- 🇷🇺 Russie
+- 🇸🇳 Sénégal
+- 🇨🇭 Suisse
+- 🇹🇳 Tunisie
+- 🇹🇷 Turquie
 
----
+## Fonctionnalités
 
-## 🟣 Caractéristiques techniques
+Pour chaque pays, vous trouverez :
+- Liste des meilleures universités
+- Coûts des études (en devise locale et FCFA)
+- Informations sur le visa étudiant
+- Détails sur le logement
+- Vie étudiante et culture locale
 
-✅ **100% HTML et CSS pur** (pas de JavaScript, pas de framework)
+## Comment Utiliser
 
-✅ **Design responsive**, s’adaptant à toutes les tailles d'écran (ordinateur, tablette, téléphone)
+1. Naviguez vers le pays de votre choix
+2. Consultez les informations sur les universités
+3. Vérifiez les coûts et les conditions d'admission
+4. Contactez les universités qui vous intéressent
 
-✅ **Interface sombre, moderne et magique**, avec des hover, des ombrages, et une expérience graphique de qualité
+## Contribution
 
-✅ **Code léger, rapide, optimisé**, afin d’améliorer l’accessibilité et le référencement (SEO)
+Les contributions sont les bienvenues ! Pour contribuer :
+1. Fork le projet
+2. Créez une branche pour votre fonctionnalité
+3. Committez vos changements
+4. Poussez vers la branche
+5. Ouvrez une Pull Request
 
----
+## Licence
 
-## 🟣 Utilisation
-
-1️⃣ **Clonez ce repository** :
-```bash
-git clone <url-du-repository>
+© 2025 Guide d'Orientation pour les Études à l'Étranger - Tous droits réservés
