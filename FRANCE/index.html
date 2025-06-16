@@ -4,706 +4,594 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Études en France - Guide Complet</title>
+    <title>Étudier en France - Guide Complet</title>
     <link rel="stylesheet" href="styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
+    <header>
+        <nav>
+            <div class="logo">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="Drapeau français"
-                    class="french-flag">
-                <h1>🇫🇷 Études en France</h1>
+                    class="flag-icon">
+                Étudier en France
             </div>
-            <ul class="nav-menu">
-                <li><a href="#procedures" class="nav-link">Procédures</a></li>
-                <li><a href="#universites" class="nav-link">Universités</a></li>
-                <li><a href="#bourses" class="nav-link">Bourses</a></li>
-                <li><a href="#vie-etudiante" class="nav-link">Vie Étudiante</a></li>
-                <li><a href="index.html" class="nav-link">🏠 Accueil</a></li>
+            <ul>
+                <li><a href="#presentation"><i class="fas fa-info-circle"></i> Présentation</a></li>
+                <li><a href="#universites"><i class="fas fa-university"></i> Universités</a></li>
+                <li><a href="#couts"><i class="fas fa-euro-sign"></i> Coûts</a></li>
+                <li><a href="#visa"><i class="fas fa-passport"></i> Visa</a></li>
+                <li><a href="#logement"><i class="fas fa-home"></i> Logement</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section France -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div style="font-size: 8rem; margin-bottom: 2rem;">🇫🇷</div>
-                <h1 class="hero-title">Étudier en France</h1>
-                <p class="hero-subtitle">
-                    Découvrez le système éducatif français d'excellence, ses universités prestigieuses
-                    et les opportunités infinies qui vous attendent dans l'Hexagone.
-                </p>
-
-                <div class="hero-stats">
-                    <div class="stat">
-                        <h3>400+</h3>
-                        <p>Établissements d'enseignement supérieur</p>
-                    </div>
-                    <div class="stat">
-                        <h3>2.7M</h3>
-                        <p>Étudiants en France</p>
-                    </div>
-                    <div class="stat">
-                        <h3>370K</h3>
-                        <p>Étudiants internationaux</p>
-                    </div>
-                    <div class="stat">
-                        <h3>€170</h3>
-                        <p>Frais d'inscription universitaire/an</p>
-                    </div>
-                </div>
+        <div class="hero-content">
+            <div class="hero-flag">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="Drapeau français"
+                    class="flag-large">
+            </div>
+            <h1>Étudier en France</h1>
+            <p>Découvrez l'excellence académique française et vivez une expérience culturelle unique</p>
+            <div class="hero-buttons">
+                <a href="#universites" class="btn btn-primary">Découvrir les Universités</a>
+                <a href="#couts" class="btn btn-secondary">Voir les Coûts</a>
             </div>
         </div>
     </section>
 
-    <!-- Procédures Section -->
-    <section id="procedures" class="country-section">
-        <div class="container">
-            <div class="country-header">
-                <h2 class="country-title">Procédures d'Admission</h2>
-                <p class="country-description">Guide complet pour candidater aux universités françaises</p>
+    <section id="presentation" class="country-section">
+        <h2 class="section-title">Pourquoi Choisir la France ?</h2>
+        <div class="presentation-grid">
+            <div class="presentation-card reveal">
+                <i class="fas fa-graduation-cap presentation-icon"></i>
+                <h3>Excellence Académique</h3>
+                <ul class="feature-list">
+                    <li>Plus de 3 500 établissements d'enseignement supérieur</li>
+                    <li>Classement mondial des meilleures universités</li>
+                    <li>Formation de qualité reconnue internationalement</li>
+                    <li>Innovation et recherche de pointe</li>
+                </ul>
             </div>
-
-            <div class="university-grid">
-                <div class="university-card">
-                    <h4>🎓 Parcoursup (Licence)</h4>
-                    <div class="university-info">
-                        <span class="rank">Plateforme nationale</span>
-                        <span class="students">Janvier - Septembre</span>
-                    </div>
-                    <p>Plateforme obligatoire pour toutes les inscriptions en première année de licence dans les
-                        universités publiques françaises.</p>
-                    <div class="specialties">
-                        <span class="specialty">Vœux multiples</span>
-                        <span class="specialty">Lettre de motivation</span>
-                        <span class="specialty">Dossier scolaire</span>
-                    </div>
-                    <a href="https://www.parcoursup.fr/" class="university-link" target="_blank">Accéder à
-                        Parcoursup</a>
-                </div>
-
-                <div class="university-card">
-                    <h4>🎯 Campus France</h4>
-                    <div class="university-info">
-                        <span class="rank">Étudiants internationaux</span>
-                        <span class="students">Toute l'année</span>
-                    </div>
-                    <p>Agence française pour la promotion de l'enseignement supérieur, accueil et mobilité
-                        internationale.</p>
-                    <div class="specialties">
-                        <span class="specialty">Visa étudiant</span>
-                        <span class="specialty">Dossier DAP</span>
-                        <span class="specialty">TCF/DELF</span>
-                    </div>
-                    <a href="https://www.campusfrance.org/" class="university-link" target="_blank">Visiter Campus
-                        France</a>
-                </div>
-
-                <div class="university-card">
-                    <h4>📚 Master et Doctorat</h4>
-                    <div class="university-info">
-                        <span class="rank">Candidature directe</span>
-                        <span class="students">Variable</span>
-                    </div>
-                    <p>Candidatures directes auprès des universités pour les programmes de master et doctorat.</p>
-                    <div class="specialties">
-                        <span class="specialty">Dossier académique</span>
-                        <span class="specialty">Projet de recherche</span>
-                        <span class="specialty">Recommandations</span>
-                    </div>
-                    <a href="https://www.enseignementsup-recherche.gouv.fr/" class="university-link"
-                        target="_blank">Ministère de l'Enseignement Supérieur</a>
-                </div>
+            <div class="presentation-card reveal">
+                <i class="fas fa-landmark presentation-icon"></i>
+                <h3>Culture Riche</h3>
+                <ul class="feature-list">
+                    <li>Patrimoine historique exceptionnel</li>
+                    <li>Art et culture accessibles</li>
+                    <li>Mode de vie à la française</li>
+                    <li>Gastronomie mondiale</li>
+                </ul>
+            </div>
+            <div class="presentation-card reveal">
+                <i class="fas fa-briefcase presentation-icon"></i>
+                <h3>Opportunités Professionnelles</h3>
+                <ul class="feature-list">
+                    <li>Stages dans des entreprises internationales</li>
+                    <li>Réseau professionnel étendu</li>
+                    <li>Possibilité de travailler en France</li>
+                    <li>Carrières internationales</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Universités Section -->
     <section id="universites" class="country-section">
-        <div class="container">
-            <div class="country-header">
-                <h2 class="country-title">Universités Françaises</h2>
-                <p class="country-description">Les meilleures institutions d'enseignement supérieur de France</p>
+        <h2 class="section-title">Meilleures Universités</h2>
+        <div class="university-grid">
+            <div class="university-card reveal">
+                <h4>Université Paris-Saclay</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #1 en France</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Paris</span>
+                    <span><i class="fas fa-users"></i> 60,000 étudiants</span>
+                </div>
+                <p>L'une des meilleures universités de recherche au monde, spécialisée en sciences et technologies.</p>
+                <div class="specialties">
+                    <span class="specialty">Sciences</span>
+                    <span class="specialty">Ingénierie</span>
+                    <span class="specialty">Médecine</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Master en Intelligence Artificielle</li>
+                        <li>Doctorat en Physique Quantique</li>
+                        <li>Ingénierie Aérospatiale</li>
+                    </ul>
+                </div>
+                <a href="https://www.universite-paris-saclay.fr" class="university-link" target="_blank">Visiter le site
+                    <i class="fas fa-external-link-alt"></i></a>
             </div>
 
-            <!-- Île-de-France -->
-            <div class="region">
-                <h3 class="region-title">🏛️ Île-de-France (Paris et région parisienne)</h3>
-                <div class="university-grid">
-                    <div class="university-card">
-                        <h4>Sorbonne Université</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 44</span>
-                            <span class="students">55 000 étudiants</span>
-                        </div>
-                        <p>L'une des universités les plus prestigieuses de France, issue de la fusion de Paris-Sorbonne
-                            et Pierre et Marie Curie.</p>
-                        <div class="specialties">
-                            <span class="specialty">Lettres</span>
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Médecine</span>
-                            <span class="specialty">Ingénierie</span>
-                        </div>
-                        <a href="https://www.sorbonne-universite.fr/" class="university-link" target="_blank">Site
-                            officiel</a>
-                    </div>
+            <div class="university-card reveal">
+                <h4>Sciences Po Paris</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #2 en Sciences Sociales</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Paris</span>
+                    <span><i class="fas fa-users"></i> 14,000 étudiants</span>
+                </div>
+                <p>Institution prestigieuse spécialisée en sciences politiques et relations internationales.</p>
+                <div class="specialties">
+                    <span class="specialty">Sciences Politiques</span>
+                    <span class="specialty">Relations Internationales</span>
+                    <span class="specialty">Économie</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Master en Affaires Internationales</li>
+                        <li>Master en Politique Publique</li>
+                        <li>Master en Finance</li>
+                    </ul>
+                </div>
+                <a href="https://www.sciencespo.fr" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
 
-                    <div class="university-card">
-                        <h4>Université PSL</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 26</span>
-                            <span class="students">17 000 étudiants</span>
-                        </div>
-                        <p>Université de recherche prestigieuse regroupant ENS, Dauphine, MINES ParisTech, et d'autres
-                            grandes écoles.</p>
-                        <div class="specialties">
-                            <span class="specialty">Recherche</span>
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Arts</span>
-                            <span class="specialty">Sciences humaines</span>
-                        </div>
-                        <a href="https://www.psl.eu/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
+            <div class="university-card reveal">
+                <h4>HEC Paris</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #1 Business School</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Jouy-en-Josas</span>
+                    <span><i class="fas fa-users"></i> 4,500 étudiants</span>
+                </div>
+                <p>École de commerce de renommée mondiale, leader en formation en management.</p>
+                <div class="specialties">
+                    <span class="specialty">Business</span>
+                    <span class="specialty">Management</span>
+                    <span class="specialty">Finance</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Master in Management</li>
+                        <li>MBA</li>
+                        <li>Executive Education</li>
+                    </ul>
+                </div>
+                <a href="https://www.hec.edu" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
 
-                    <div class="university-card">
-                        <h4>Université Panthéon-Sorbonne (Paris 1)</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang national: Top 5</span>
-                            <span class="students">47 000 étudiants</span>
-                        </div>
-                        <p>Spécialisée en droit, économie, gestion, sciences politiques et humaines.</p>
-                        <div class="specialties">
-                            <span class="specialty">Droit</span>
-                            <span class="specialty">Économie</span>
-                            <span class="specialty">Gestion</span>
-                            <span class="specialty">Histoire</span>
-                        </div>
-                        <a href="https://www.pantheonsorbonne.fr/" class="university-link" target="_blank">Site
-                            officiel</a>
-                    </div>
+            <div class="university-card reveal">
+                <h4>École Polytechnique</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #1 en Ingénierie</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Palaiseau</span>
+                    <span><i class="fas fa-users"></i> 2,300 étudiants</span>
+                </div>
+                <p>Grande école d'ingénieurs prestigieuse, excellence en sciences et technologie.</p>
+                <div class="specialties">
+                    <span class="specialty">Ingénierie</span>
+                    <span class="specialty">Sciences</span>
+                    <span class="specialty">Mathématiques</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Ingénieur Polytechnicien</li>
+                        <li>Master en Sciences</li>
+                        <li>Master en Mathématiques</li>
+                    </ul>
+                </div>
+                <a href="https://www.polytechnique.edu" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
 
-                    <div class="university-card">
-                        <h4>Université Paris-Saclay</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 15</span>
-                            <span class="students">48 000 étudiants</span>
-                        </div>
-                        <p>Cluster d'excellence en sciences et technologies, leader en recherche en informatique et
-                            intelligence artificielle.</p>
-                        <div class="specialties">
-                            <span class="specialty">Informatique</span>
-                            <span class="specialty">IA</span>
-                            <span class="specialty">Data Science</span>
-                            <span class="specialty">Cybersécurité</span>
-                        </div>
-                        <a href="https://www.universite-paris-saclay.fr/" class="university-link" target="_blank">Site
-                            officiel</a>
-                    </div>
+            <div class="university-card reveal">
+                <h4>École Normale Supérieure de Paris</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #1 en Formation</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Paris</span>
+                    <span><i class="fas fa-users"></i> 2,400 étudiants</span>
+                </div>
+                <p>Institution d'excellence en formation et recherche.</p>
+                <div class="specialties">
+                    <span class="specialty">Sciences</span>
+                    <span class="specialty">Lettres</span>
+                    <span class="specialty">Recherche</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Master en Sciences</li>
+                        <li>Master en Lettres</li>
+                        <li>Master en Recherche</li>
+                    </ul>
+                </div>
+                <a href="https://www.ens.psl.eu" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="university-card reveal">
+                <h4>Université Paris-Sorbonne</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #1 en Lettres</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Paris</span>
+                    <span><i class="fas fa-users"></i> 55,000 étudiants</span>
+                </div>
+                <p>Une des plus anciennes universités du monde, excellence en lettres et sciences humaines.</p>
+                <div class="specialties">
+                    <span class="specialty">Lettres</span>
+                    <span class="specialty">Sciences Humaines</span>
+                    <span class="specialty">Langues</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Master en Lettres</li>
+                        <li>Master en Histoire</li>
+                        <li>Master en Langues</li>
+                    </ul>
+                </div>
+                <a href="https://www.sorbonne-universite.fr" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="university-card reveal">
+                <h4>École des Mines de Paris</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #2 en Ingénierie</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Paris</span>
+                    <span><i class="fas fa-users"></i> 1,200 étudiants</span>
+                </div>
+                <p>Grande école d'ingénieurs spécialisée en sciences de la terre et ingénierie.</p>
+                <div class="specialties">
+                    <span class="specialty">Ingénierie</span>
+                    <span class="specialty">Géologie</span>
+                    <span class="specialty">Énergie</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Ingénieur Civil</li>
+                        <li>Master en Géologie</li>
+                        <li>Master en Énergie</li>
+                    </ul>
+                </div>
+                <a href="https://www.minesparis.psl.eu" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="university-card reveal">
+                <h4>École Normale Supérieure de Lyon</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #2 en Sciences</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Lyon</span>
+                    <span><i class="fas fa-users"></i> 2,300 étudiants</span>
+                </div>
+                <p>Excellence en recherche et formation en sciences et lettres.</p>
+                <div class="specialties">
+                    <span class="specialty">Sciences</span>
+                    <span class="specialty">Lettres</span>
+                    <span class="specialty">Recherche</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Master en Sciences</li>
+                        <li>Master en Lettres</li>
+                        <li>Master en Recherche</li>
+                    </ul>
+                </div>
+                <a href="https://www.ens-lyon.fr" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="university-card reveal">
+                <h4>ESCP Business School</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #2 Business School</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Paris</span>
+                    <span><i class="fas fa-users"></i> 6,000 étudiants</span>
+                </div>
+                <p>École de commerce internationale avec campus dans 6 pays européens.</p>
+                <div class="specialties">
+                    <span class="specialty">Business</span>
+                    <span class="specialty">Management</span>
+                    <span class="specialty">Marketing</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Master in Management</li>
+                        <li>MBA</li>
+                        <li>Executive Education</li>
+                    </ul>
+                </div>
+                <a href="https://www.escp.eu" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="university-card reveal">
+                <h4>CentraleSupélec</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #3 en Ingénierie</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Paris-Saclay</span>
+                    <span><i class="fas fa-users"></i> 4,500 étudiants</span>
+                </div>
+                <p>Grande école d'ingénieurs leader en sciences et technologies.</p>
+                <div class="specialties">
+                    <span class="specialty">Ingénierie</span>
+                    <span class="specialty">Sciences</span>
+                    <span class="specialty">Technologie</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Ingénieur Centralien</li>
+                        <li>Master en Sciences</li>
+                        <li>Master en Technologies</li>
+                    </ul>
+                </div>
+                <a href="https://www.centralesupelec.fr" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="university-card reveal">
+                <h4>EDHEC Business School</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #3 Business School</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Lille/Nice</span>
+                    <span><i class="fas fa-users"></i> 8,500 étudiants</span>
+                </div>
+                <p>École de commerce reconnue pour son excellence en finance et entrepreneuriat.</p>
+                <div class="specialties">
+                    <span class="specialty">Finance</span>
+                    <span class="specialty">Business</span>
+                    <span class="specialty">Entrepreneuriat</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Master in Finance</li>
+                        <li>Master in Management</li>
+                        <li>MBA</li>
+                    </ul>
+                </div>
+                <a href="https://www.edhec.edu" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="university-card reveal">
+                <h4>Université Paris-Dauphine</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #1 en Économie</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Paris</span>
+                    <span><i class="fas fa-users"></i> 9,400 étudiants</span>
+                </div>
+                <p>Université spécialisée en sciences de gestion, économie et mathématiques appliquées.</p>
+                <div class="specialties">
+                    <span class="specialty">Économie</span>
+                    <span class="specialty">Gestion</span>
+                    <span class="specialty">Mathématiques</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Master en Finance</li>
+                        <li>Master en Management</li>
+                        <li>Master en Mathématiques</li>
+                    </ul>
+                </div>
+                <a href="https://www.dauphine.psl.eu" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="university-card reveal">
+                <h4>École des Ponts ParisTech</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #4 en Ingénierie</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Champs-sur-Marne</span>
+                    <span><i class="fas fa-users"></i> 1,800 étudiants</span>
+                </div>
+                <p>Grande école d'ingénieurs spécialisée en génie civil et urbanisme.</p>
+                <div class="specialties">
+                    <span class="specialty">Génie Civil</span>
+                    <span class="specialty">Urbanisme</span>
+                    <span class="specialty">Transport</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Ingénieur des Ponts</li>
+                        <li>Master en Urbanisme</li>
+                        <li>Master en Transport</li>
+                    </ul>
+                </div>
+                <a href="https://www.ecoledesponts.fr" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="university-card reveal">
+                <h4>Institut d'Études Politiques de Paris (Sciences Po)</h4>
+                <div class="university-info">
+                    <span><i class="fas fa-trophy"></i> #1 en Sciences Sociales</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Paris</span>
+                    <span><i class="fas fa-users"></i> 14,000 étudiants</span>
+                </div>
+                <p>Institution prestigieuse spécialisée en sciences politiques et relations internationales.</p>
+                <div class="specialties">
+                    <span class="specialty">Sciences Politiques</span>
+                    <span class="specialty">Relations Internationales</span>
+                    <span class="specialty">Droit</span>
+                </div>
+                <div class="programs">
+                    <h5>Programmes Phares</h5>
+                    <ul>
+                        <li>Master en Affaires Internationales</li>
+                        <li>Master en Politique Publique</li>
+                        <li>Master en Droit</li>
+                    </ul>
+                </div>
+                <a href="https://www.sciencespo.fr" class="university-link" target="_blank">Visiter le site <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="couts" class="country-section">
+        <h2 class="section-title">Coûts des Études</h2>
+        <div class="cost-grid">
+            <div class="cost-card reveal">
+                <i class="fas fa-euro-sign cost-icon"></i>
+                <h3>Frais de Scolarité</h3>
+                <ul class="cost-list">
+                    <li>Universités publiques : 170€ - 380€/an (111,650 - 249,550 FCFA)</li>
+                    <li>Grandes écoles : 500€ - 10,000€/an (328,500 - 6,570,000 FCFA)</li>
+                    <li>Écoles privées : 3,000€ - 10,000€/an (1,971,000 - 6,570,000 FCFA)</li>
+                    <li>Formation continue : 2,000€ - 15,000€/an (1,314,000 - 9,855,000 FCFA)</li>
+                </ul>
+                <div class="cost-note">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Les frais varient selon le niveau d'études et le type d'établissement</p>
                 </div>
             </div>
 
-            <!-- Auvergne-Rhône-Alpes -->
-            <div class="region">
-                <h3 class="region-title">🏔️ Auvergne-Rhône-Alpes</h3>
-                <div class="university-grid">
-                    <div class="university-card">
-                        <h4>Université de Lyon (UdL)</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 156</span>
-                            <span class="students">137 000 étudiants</span>
-                        </div>
-                        <p>Site universitaire de Lyon regroupant plusieurs établissements d'excellence.</p>
-                        <div class="specialties">
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Médecine</span>
-                            <span class="specialty">Lettres</span>
-                            <span class="specialty">Ingénierie</span>
-                        </div>
-                        <a href="https://www.universite-lyon.fr/" class="university-link" target="_blank">Site
-                            officiel</a>
-                    </div>
-
-                    <div class="university-card">
-                        <h4>Université Grenoble Alpes</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 194</span>
-                            <span class="students">60 000 étudiants</span>
-                        </div>
-                        <p>Université de recherche intensive située dans les Alpes françaises.</p>
-                        <div class="specialties">
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Technologie</span>
-                            <span class="specialty">Médecine</span>
-                            <span class="specialty">Sciences humaines</span>
-                        </div>
-                        <a href="https://www.univ-grenoble-alpes.fr/" class="university-link" target="_blank">Site
-                            officiel</a>
-                    </div>
-
-                    <div class="university-card">
-                        <h4>Université Claude Bernard Lyon 1</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 401-500</span>
-                            <span class="students">45 000 étudiants</span>
-                        </div>
-                        <p>Université spécialisée en sciences et technologies, avec un département informatique renommé.
-                        </p>
-                        <div class="specialties">
-                            <span class="specialty">Informatique</span>
-                            <span class="specialty">Réseaux</span>
-                            <span class="specialty">Logiciel</span>
-                            <span class="specialty">Systèmes</span>
-                        </div>
-                        <a href="https://www.univ-lyon1.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
+            <div class="cost-card reveal">
+                <i class="fas fa-home cost-icon"></i>
+                <h3>Logement</h3>
+                <ul class="cost-list">
+                    <li>Résidence universitaire : 200€ - 400€/mois (131,400 - 262,800 FCFA)</li>
+                    <li>Colocation : 400€ - 600€/mois (262,800 - 394,200 FCFA)</li>
+                    <li>Studio : 500€ - 800€/mois (328,500 - 525,600 FCFA)</li>
+                    <li>Appartement : 700€ - 1,200€/mois (459,900 - 788,400 FCFA)</li>
+                </ul>
+                <div class="cost-note">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Les prix varient selon la ville et le type de logement</p>
                 </div>
             </div>
 
-            <!-- Provence-Alpes-Côte d'Azur -->
-            <div class="region">
-                <h3 class="region-title">🌅 Provence-Alpes-Côte d'Azur</h3>
-                <div class="university-grid">
-                    <div class="university-card">
-                        <h4>Aix-Marseille Université</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 201-250</span>
-                            <span class="students">80 000 étudiants</span>
-                        </div>
-                        <p>L'une des plus grandes universités de France et d'Europe francophone.</p>
-                        <div class="specialties">
-                            <span class="specialty">Droit</span>
-                            <span class="specialty">Économie</span>
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Médecine</span>
-                        </div>
-                        <a href="https://www.univ-amu.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
-
-                    <div class="university-card">
-                        <h4>Université Côte d'Azur</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 401-500</span>
-                            <span class="students">30 000 étudiants</span>
-                        </div>
-                        <p>Université pluridisciplinaire située sur la Côte d'Azur, reconnue pour son excellence en
-                            recherche.</p>
-                        <div class="specialties">
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Technologie</span>
-                            <span class="specialty">Arts</span>
-                            <span class="specialty">Santé</span>
-                        </div>
-                        <a href="https://univ-cotedazur.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Occitanie -->
-            <div class="region">
-                <h3 class="region-title">🌞 Occitanie</h3>
-                <div class="university-grid">
-                    <div class="university-card">
-                        <h4>Université de Montpellier</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 301-350</span>
-                            <span class="students">50 000 étudiants</span>
-                        </div>
-                        <p>Une des plus anciennes universités d'Europe, reconnue pour ses programmes en médecine et
-                            sciences.</p>
-                        <div class="specialties">
-                            <span class="specialty">Médecine</span>
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Droit</span>
-                            <span class="specialty">Économie</span>
-                        </div>
-                        <a href="https://www.umontpellier.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
-
-                    <div class="university-card">
-                        <h4>Université Toulouse III - Paul Sabatier</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 401-500</span>
-                            <span class="students">32 000 étudiants</span>
-                        </div>
-                        <p>Université spécialisée en sciences, technologies et santé, située dans la ville spatiale de
-                            Toulouse.</p>
-                        <div class="specialties">
-                            
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Ingénierie</span>
-                            <span class="specialty">Santé</span>
-                            <span class="specialty">Spatial</span>
-                        </div>
-                        <a href="https://www.univ-tlse3.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
-
-                    <div class="university-card">
-                        <h4>Université Toulouse 1 Capitole</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 601-800</span>
-                            <span class="students">23 000 étudiants</span>
-                        </div>
-                        <p>Université spécialisée en droit, économie et gestion, avec un département informatique
-                            appliquée au droit.</p>
-                        <div class="specialties">
-                            <span class="specialty">Informatique juridique</span>
-                            <span class="specialty">Droit numérique</span>
-                            <span class="specialty">Cybersécurité</span>
-                            <span class="specialty">Data Science</span>
-                        </div>
-                        <a href="https://www.ut-capitole.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hauts-de-France -->
-            <div class="region">
-                <h3 class="region-title">🏭 Hauts-de-France</h3>
-                <div class="university-grid">
-                    <div class="university-card">
-                        <h4>Université de Lille</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 301-350</span>
-                            <span class="students">70 000 étudiants</span>
-                        </div>
-                        <p>Grande université pluridisciplinaire du nord de la France, reconnue pour sa recherche.</p>
-                        <div class="specialties">
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Droit</span>
-                            <span class="specialty">Médecine</span>
-                            <span class="specialty">Ingénierie</span>
-                        </div>
-                        <a href="https://www.univ-lille.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Nouvelle-Aquitaine -->
-            <div class="region">
-                <h3 class="region-title">🍷 Nouvelle-Aquitaine</h3>
-                <div class="university-grid">
-                    <div class="university-card">
-                        <h4>Université de Bordeaux</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 301-350</span>
-                            <span class="students">56 000 étudiants</span>
-                        </div>
-                        <p>Universitaire majeure du sud-ouest, reconnue pour ses programmes en sciences et santé.</p>
-                        <div class="specialties">
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Médecine</span>
-                            <span class="specialty">Droit</span>
-                            <span class="specialty">Oenologie</span>
-                        </div>
-                        <a href="https://www.u-bordeaux.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
-
-                    <div class="university-card">
-                        <h4>Université de Poitiers</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 601-800</span>
-                            <span class="students">28 000 étudiants</span>
-                        </div>
-                        <p>Une des plus anciennes universités de France, reconnue pour ses programmes en droit et
-                            sciences.</p>
-                        <div class="specialties">
-                            <span class="specialty">Droit</span>
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Médecine</span>
-                            <span class="specialty">Langues</span>
-                        </div>
-                        <a href="https://www.univ-poitiers.fr/" class="university-link" target="_blank">Site
-                            officiel</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Grand Est -->
-            <div class="region">
-                <h3 class="region-title">🍺 Grand Est</h3>
-                <div class="university-grid">
-                    <div class="university-card">
-                        <h4>Université de Strasbourg</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 401-500</span>
-                            <span class="students">52 000 étudiants</span>
-                        </div>
-                        <p>Université européenne par excellence, située au cœur de l'Europe, reconnue pour sa recherche.
-                        </p>
-                        <div class="specialties">
-                            <span class="specialty">Droit</span>
-                            <span class="specialty">Médecine</span>
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Langues</span>
-                        </div>
-                        <a href="https://www.unistra.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bretagne -->
-            <div class="region">
-                <h3 class="region-title">🌊 Bretagne</h3>
-                <div class="university-grid">
-                    <div class="university-card">
-                        <h4>Université de Rennes 1</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 401-500</span>
-                            <span class="students">32 000 étudiants</span>
-                        </div>
-                        <p>Université pluridisciplinaire reconnue pour ses programmes en sciences et technologies.</p>
-                        <div class="specialties">
-                            <span class="specialty">Sciences</span>
-                            <span class="specialty">Médecine</span>
-                            <span class="specialty">Droit</span>
-                            <span class="specialty">Économie</span>
-                        </div>
-                        <a href="https://www.univ-rennes1.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
-
-                    <div class="university-card">
-                        <h4>Université de Bretagne Sud</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 801-1000</span>
-                            <span class="students">10 000 étudiants</span>
-                        </div>
-                        <p>Université spécialisée en sciences et technologies, avec un fort accent sur l'informatique et
-                            le numérique.</p>
-                        <div class="specialties">
-                            <span class="specialty">Informatique</span>
-                            <span class="specialty">Web</span>
-                            <span class="specialty">Mobile</span>
-                            <span class="specialty">IoT</span>
-                        </div>
-                        <a href="https://www.univ-ubs.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Normandie -->
-            <div class="region">
-                <h3 class="region-title">🏰 Normandie</h3>
-                <div class="university-grid">
-                    <div class="university-card">
-                        <h4>Université de Caen Normandie</h4>
-                        <div class="university-info">
-                            <span class="rank">Rang mondial: 801-1000</span>
-                            <span class="students">31 000 étudiants</span>
-                        </div>
-                        <p>Université pluridisciplinaire historique, reconnue pour ses programmes en sciences humaines.
-                        </p>
-                        <div class="specialties">
-                            <span class="specialty">Sciences humaines</span>
-                            <span class="specialty">Droit</span>
-                            <span class="specialty">Médecine</span>
-                            <span class="specialty">Sciences</span>
-                        </div>
-                        <a href="https://www.unicaen.fr/" class="university-link" target="_blank">Site officiel</a>
-                    </div>
+            <div class="cost-card reveal">
+                <i class="fas fa-utensils cost-icon"></i>
+                <h3>Vie Quotidienne</h3>
+                <ul class="cost-list">
+                    <li>Alimentation : 200€ - 300€/mois (131,400 - 197,100 FCFA)</li>
+                    <li>Transport : 30€ - 75€/mois (19,710 - 49,275 FCFA)</li>
+                    <li>Loisirs : 100€ - 200€/mois (65,700 - 131,400 FCFA)</li>
+                    <li>Assurance : 20€ - 50€/mois (13,140 - 32,850 FCFA)</li>
+                </ul>
+                <div class="cost-note">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Budget mensuel moyen : 800€ - 1,200€ (525,600 - 788,400 FCFA)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Bourses Section -->
-    <section id="bourses" class="country-section">
-        <div class="container">
-            <div class="country-header">
-                <h2 class="country-title">Bourses et Financement</h2>
-                <p class="country-description">Opportunités de financement pour vos études en France</p>
-            </div>
-
-            <div class="university-grid">
-                <div class="university-card">
-                    <h4>🏆 Bourses Eiffel</h4>
-                    <div class="university-info">
-                        <span class="rank">Prestige</span>
-                        <span class="students">400 bourses/an</span>
-                    </div>
-                    <p>Bourse d'excellence du gouvernement français pour attirer les meilleurs étudiants étrangers.</p>
-                    <div class="specialties">
-                        <span class="specialty">Master</span>
-                        <span class="specialty">Doctorat</span>
-                        <span class="specialty">1 181 €/mois</span>
-                    </div>
-                    <a href="https://www.campusfrance.org/fr/le-programme-de-bourses-eiffel" class="university-link"
-                        target="_blank">Plus d'infos</a>
+    <section id="visa" class="country-section">
+        <h2 class="section-title">Visa Étudiant</h2>
+        <div class="visa-info reveal">
+            <h3><i class="fas fa-passport"></i> Procédure de Demande</h3>
+            <ul>
+                <li>Inscription dans un établissement français</li>
+                <li>Préparation des documents requis</li>
+                <li>Demande de visa au consulat</li>
+                <li>Validation du visa en France</li>
+            </ul>
+            <div class="visa-timeline">
+                <div class="timeline-item">
+                    <i class="fas fa-file-alt"></i>
+                    <h4>Documents Requis</h4>
+                    <p>Passeport, photos, justificatifs financiers, attestation d'inscription</p>
                 </div>
-
-                <div class="university-card">
-                    <h4>🎓 Bourses CROUS</h4>
-                    <div class="university-info">
-                        <span class="rank">Critères sociaux</span>
-                        <span class="students">Variable</span>
-                    </div>
-                    <p>Bourses sur critères sociaux pour les étudiants français et européens.</p>
-                    <div class="specialties">
-                        <span class="specialty">0 à 7 échelons</span>
-                        <span class="specialty">122 € à 5 965 €/an</span>
-                        <span class="specialty">Logement</span>
-                    </div>
-                    <a href="https://www.etudiant.gouv.fr/" class="university-link" target="_blank">Site
-                        gouvernemental</a>
+                <div class="timeline-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>Délais</h4>
+                    <p>2-3 semaines pour l'obtention du visa</p>
                 </div>
-
-                <div class="university-card">
-                    <h4>🌍 Erasmus+</h4>
-                    <div class="university-info">
-                        <span class="rank">Mobilité européenne</span>
-                        <span class="students">Étudiants UE</span>
-                    </div>
-                    <p>Programme d'échanges européens pour étudier en France.</p>
-                    <div class="specialties">
-                        <span class="specialty">250-350 €/mois</span>
-                        <span class="specialty">Échange</span>
-                        <span class="specialty">3-12 mois</span>
-                    </div>
-                    <a href="https://erasmus-plus.ec.europa.eu/" class="university-link" target="_blank">Site
-                        Erasmus+</a>
+                <div class="timeline-item">
+                    <i class="fas fa-euro-sign"></i>
+                    <h4>Frais</h4>
+                    <p>50€ pour le visa étudiant</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Vie Étudiante Section -->
-    <section id="vie-etudiante" class="country-section">
-        <div class="container">
-            <div class="country-header">
-                <h2 class="country-title">Vie Étudiante en France</h2>
-                <p class="country-description">Tout ce qu'il faut savoir pour bien vivre ses études en France</p>
+    <section id="logement" class="country-section">
+        <h2 class="section-title">Options de Logement</h2>
+        <div class="housing-grid">
+            <div class="housing-card reveal">
+                <i class="fas fa-building housing-icon"></i>
+                <h3>Résidences Universitaires</h3>
+                <ul class="housing-features">
+                    <li>Prix abordables</li>
+                    <li>Proche des campus</li>
+                    <li>Services inclus</li>
+                    <li>Vie étudiante active</li>
+                </ul>
             </div>
-
-            <div class="university-grid">
-                <div class="university-card">
-                    <h4>🏠 Logement</h4>
-                    <div class="university-info">
-                        <span class="rank">CROUS</span>
-                        <span class="students">Résidences privées</span>
-                    </div>
-                    <p>Options de logement pour étudiants : résidences universitaires, studios, colocations.</p>
-                    <div class="specialties">
-                        <span class="specialty">150-800 €/mois</span>
-                        <span class="specialty">APL</span>
-                        <span class="specialty">Caution</span>
-                    </div>
-                    <a href="https://www.lokaviz.fr/" class="university-link" target="_blank">Lokaviz CROUS</a>
-                </div>
-
-                <div class="university-card">
-                    <h4>🍽️ Restauration</h4>
-                    <div class="university-info">
-                        <span class="rank">RU CROUS</span>
-                        <span class="students">3,30 €</span>
-                    </div>
-                    <p>Restaurants universitaires proposant des repas équilibrés à prix étudiant.</p>
-                    <div class="specialties">
-                        <span class="specialty">Petit-déjeuner</span>
-                        <span class="specialty">Déjeuner</span>
-                        <span class="specialty">Dîner</span>
-                    </div>
-                    <a href="https://www.crous-paris.fr/" class="university-link" target="_blank">CROUS Paris</a>
-                </div>
-
-                <div class="university-card">
-                    <h4>🚇 Transport</h4>
-                    <div class="university-info">
-                        <span class="rank">Navigo</span>
-                        <span class="students">Réductions</span>
-                    </div>
-                    <p>Transports en commun avec tarifs préférentiels pour les étudiants.</p>
-                    <div class="specialties">
-                        <span class="specialty">Navigo jeune</span>
-                        <span class="specialty">Vélib'</span>
-                        <span class="specialty">SNCF</span>
-                    </div>
-                    <a href="https://www.iledefrance-mobilites.fr/" class="university-link"
-                        target="_blank">Île-de-France Mobilités</a>
-                </div>
+            <div class="housing-card reveal">
+                <i class="fas fa-users housing-icon"></i>
+                <h3>Colocation</h3>
+                <ul class="housing-features">
+                    <li>Prix modérés</li>
+                    <li>Vie sociale</li>
+                    <li>Partage des frais</li>
+                    <li>Flexibilité</li>
+                </ul>
+            </div>
+            <div class="housing-card reveal">
+                <i class="fas fa-home housing-icon"></i>
+                <h3>Studio/Appartement</h3>
+                <ul class="housing-features">
+                    <li>Indépendance</li>
+                    <li>Confort</li>
+                    <li>Intimité</li>
+                    <li>Espace personnel</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>🇫🇷 Études en France</h3>
-                    <ul>
-                        <li><a href="#procedures">Procédures d'admission</a></li>
-                        <li><a href="#universites">Universités</a></li>
-                        <li><a href="#bourses">Bourses</a></li>
-                        <li><a href="#vie-etudiante">Vie étudiante</a></li>
-                    </ul>
+                    <h4>Contact</h4>
+                    <p>Email: contact@etudier-en-france.fr</p>
+                    <p>Tél: +33 1 23 45 67 89</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Ressources officielles</h3>
-                    <ul>
-                        <li><a href="https://www.campusfrance.org/" target="_blank">Campus France</a></li>
-                        <li><a href="https://www.parcoursup.fr/" target="_blank">Parcoursup</a></li>
-                        <li><a href="https://www.etudiant.gouv.fr/" target="_blank">Portail Étudiant</a></li>
-                        <li><a href="https://www.crous-paris.fr/" target="_blank">CROUS</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="index.html">🏠 Accueil</a></li>
-                        <li><a href="#top">⬆️ Haut de page</a></li>
-                    </ul>
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Guide des Études à l'Étranger. Toutes les informations sont données à titre indicatif.
-                </p>
-                <p>Consultez toujours les sites officiels pour les informations les plus récentes.</p>
+            <div class="copyright">
+                <p>&copy; 2025 Étudier en France. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling pour les liens d'ancrage
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
         // Animation au scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
+        const reveals = document.querySelectorAll('.reveal');
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+        function reveal() {
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
                 }
             });
-        }, observerOptions);
+        }
 
-        document.querySelectorAll('.university-card, .stat').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease';
-            observer.observe(el);
-        });
+        window.addEventListener('scroll', reveal);
     </script>
 </body>
 

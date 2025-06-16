@@ -1,0 +1,691 @@
+/* Variables de couleurs du Canada */
+:root {
+    --canada-red: #FF0000;
+    --canada-white: #FFFFFF;
+    --canada-dark-red: #CC0000;
+    --canada-light-red: #FF3333;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --background-light: #F8F9FA;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.2);
+    --gradient-red: linear-gradient(135deg, var(--canada-red), var(--canada-dark-red));
+    --transition: all 0.3s ease;
+}
+
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header & Navigation */
+header {
+    background: var(--canada-white);
+    box-shadow: var(--shadow);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--canada-red);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flag-icon {
+    width: 40px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.flag-icon:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav a:hover {
+    color: var(--canada-red);
+}
+
+/* Hero Section */
+.hero {
+    background: var(--gradient-red);
+    color: var(--canada-white);
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1519832979-6fa011b87667?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-flag {
+    margin-bottom: 2rem;
+    animation: float 6s ease-in-out infinite;
+}
+
+.flag-large {
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--canada-white);
+    color: var(--canada-red);
+}
+
+.btn-primary:hover {
+    background: var(--canada-dark-red);
+    color: var(--canada-white);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--canada-white);
+    border: 2px solid var(--canada-white);
+}
+
+.btn-secondary:hover {
+    background: var(--canada-white);
+    color: var(--canada-red);
+    transform: translateY(-2px);
+}
+
+/* Sections */
+.country-section {
+    padding: 5rem 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--canada-red);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--canada-red);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+/* Presentation Grid */
+.presentation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.presentation-card {
+    background: var(--canada-white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.presentation-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-red);
+}
+
+.presentation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-icon {
+    font-size: 2.5rem;
+    color: var(--canada-red);
+    margin-bottom: 1rem;
+}
+
+.presentation-card h3 {
+    color: var(--canada-red);
+    margin-bottom: 1rem;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.feature-list li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.feature-list li::before {
+    content: '✓';
+    color: var(--canada-red);
+    position: absolute;
+    left: 0;
+}
+
+/* University Grid */
+.university-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.university-card {
+    background: var(--canada-white);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 0, 0, 0.1);
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-color: var(--canada-red);
+}
+
+.university-card h4 {
+    color: var(--canada-red);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.university-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.university-info span {
+    background: var(--background-light);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.specialty {
+    background: var(--canada-red);
+    color: var(--canada-white);
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
+
+.programs h5 {
+    color: var(--text-dark);
+    margin: 1rem 0;
+}
+
+.programs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.programs li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.programs li::before {
+    content: '→';
+    color: var(--canada-red);
+    position: absolute;
+    left: 0;
+}
+
+.university-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--canada-red);
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.university-link:hover {
+    color: var(--canada-dark-red);
+}
+
+/* Cost Grid */
+.cost-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.cost-card {
+    background: var(--canada-white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.cost-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cost-icon {
+    font-size: 2.5rem;
+    color: var(--canada-red);
+    margin-bottom: 1rem;
+}
+
+.cost-card h3 {
+    color: var(--canada-red);
+    margin-bottom: 1rem;
+}
+
+.cost-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cost-list li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.cost-list li::before {
+    content: '•';
+    color: var(--canada-red);
+    position: absolute;
+    left: 0;
+}
+
+.cost-note {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--background-light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Visa Section */
+.visa-info {
+    background: var(--canada-white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-top: 3rem;
+}
+
+.visa-info h3 {
+    color: var(--canada-red);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.visa-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.timeline-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--background-light);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.timeline-item i {
+    font-size: 2rem;
+    color: var(--canada-red);
+    margin-bottom: 1rem;
+}
+
+/* Housing Grid */
+.housing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.housing-card {
+    background: var(--canada-white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.housing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.housing-icon {
+    font-size: 2.5rem;
+    color: var(--canada-red);
+    margin-bottom: 1rem;
+}
+
+.housing-card h3 {
+    color: var(--canada-red);
+    margin-bottom: 1rem;
+}
+
+.housing-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.housing-features li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.housing-features li::before {
+    content: '✓';
+    color: var(--canada-red);
+    position: absolute;
+    left: 0;
+}
+
+/* Footer */
+footer {
+    background: var(--canada-red);
+    color: var(--canada-white);
+    padding: 4rem 2rem 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--canada-white);
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--background-light);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .flag-icon {
+        width: 30px;
+    }
+
+    .flag-large {
+        width: 150px;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .university-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.presentation-card,
+.university-card,
+.cost-card,
+.housing-card {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Effets de survol améliorés */
+.btn,
+.university-link,
+.social-links a {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after,
+.university-link::after,
+.social-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover::after,
+.university-link:hover::after,
+.social-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}

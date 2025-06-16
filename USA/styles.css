@@ -23,16 +23,25 @@ body {
     padding: 0 2rem;
 }
 
+:root {
+    --primary-color: #002868;
+    --secondary-color: #BF0A30;
+    --accent-color: #FFFFFF;
+    --text-color: #333333;
+    --background-color: #ffffff;
+    --card-background: #f8f9fa;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Header et Navigation */
 .header {
-    background: rgba(15, 15, 35, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+    background-color: var(--primary-color);
+    padding: 1rem 0;
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
     z-index: 1000;
-    transition: all 0.3s ease;
 }
 
 .nav {
@@ -51,7 +60,7 @@ body {
 }
 
 .nav-brand h1 {
-    color: #a855f7;
+    color: var(--accent-color);
     font-size: 1.5rem;
     font-weight: 700;
     font-family: "Orbitron", monospace;
@@ -72,17 +81,16 @@ body {
 }
 
 .nav-link {
-    color: #e2e8f0;
+    color: var(--accent-color);
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     position: relative;
     font-size: 0.9rem;
 }
 
 .nav-link:hover {
-    color: #a855f7;
-    transform: translateY(-2px);
+    color: var(--secondary-color);
 }
 
 .nav-link::after {
@@ -102,10 +110,16 @@ body {
 
 /* Hero Section */
 .hero {
+    background: linear-gradient(rgba(0, 40, 104, 0.8), rgba(191, 10, 48, 0.8)),
+        url('https://images.unsplash.com/photo-1485738422979-f5c462d49f74?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--accent-color);
+    padding: 8rem 0 4rem;
+    text-align: center;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
     position: relative;
     overflow: hidden;
 }
@@ -174,9 +188,9 @@ body {
 }
 
 .stat h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: #a855f7;
+    color: var(--accent-color);
     margin-bottom: 0.5rem;
 }
 
@@ -201,7 +215,7 @@ body {
 }
 
 .country-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #a855f7, #ec4899);
@@ -209,6 +223,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Orbitron", monospace;
+    color: var(--primary-color);
 }
 
 .country-description {
@@ -330,38 +345,27 @@ body {
 }
 
 .specialty {
-    background: rgba(236, 72, 153, 0.2);
-    color: #ec4899;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
-    font-size: 0.875rem;
+    background: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
 .university-link {
     display: inline-block;
-    color: #a855f7;
+    color: var(--secondary-color);
     text-decoration: none;
-    font-weight: 600;
-    border: 2px solid #a855f7;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.university-link:hover {
-    background: #a855f7;
-    color: white;
-    transform: translateX(5px);
+    margin-top: 1rem;
+    font-weight: 500;
 }
 
 /* Footer */
 .footer {
-    background: #0f0f23;
-    border-top: 1px solid rgba(139, 92, 246, 0.3);
-    padding: 3rem 0 1rem;
-    margin-top: 4rem;
+    background: var(--primary-color);
+    color: var(--accent-color);
+    padding: 4rem 0 2rem;
 }
 
 .footer-content {
@@ -372,9 +376,10 @@ body {
 }
 
 .footer-section h3 {
-    color: #a855f7;
+    color: var(--secondary-color);
     font-weight: 600;
     margin-bottom: 1rem;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .footer-section ul {
@@ -387,14 +392,14 @@ body {
 }
 
 .footer-section a {
-    color: #cbd5e1;
+    color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: 300;
 }
 
 .footer-section a:hover {
-    color: #a855f7;
+    color: var(--secondary-color);
 }
 
 .footer-bottom {
