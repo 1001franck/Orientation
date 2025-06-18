@@ -9,7 +9,7 @@ RUN addgroup -g 1001 -S nginx && \
     adduser -S -D -H -u 1001 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx
 
 # Copier les fichiers de l'application
-COPY "Landing page/" /usr/share/nginx/html/
+COPY index.html styles.css /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copier les assets si nécessaire
