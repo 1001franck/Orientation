@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: orientation-app:latest
+    container_name: orientation-web
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Landing page:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    restart: unless-stopped
+    networks:
+      - orientation-network
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Service de développement (optionnel)
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: orientation-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Landing page:/usr/share/nginx/html
+      - ./assets:/usr/share/nginx/html/assets
+    environment:
+      - NODE_ENV=development
+    profiles:
+      - dev
+
+networks:
+  orientation-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  nginx-logs:
+    driver: local
