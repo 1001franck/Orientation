@@ -165,7 +165,7 @@ cleanup.bat  # Windows
 
 1. **Télécharger le projet**
    ```bash
-   git clone https://github.com/votre-username/Orientation.git
+   git clone https://github.com/1001franck/Orientation.git
    cd Orientation
    ```
 
@@ -211,14 +211,6 @@ cleanup.bat  # Windows
 
 ### 🎨 Modifier les Styles
 
-```css
-/* Personnaliser les couleurs principales */
-:root {
-  --primary-color: #your-color;
-  --secondary-color: #your-color;
-  --accent-color: #your-color;
-}
-```
 
 ### 🌍 Ajouter un Nouveau Pays
 
